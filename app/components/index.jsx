@@ -6,5 +6,7 @@ import App from './App/index.jsx';
 ReactDOM.render((
     <Router history={browserHistory}>
       <Route path="/" component={App}></Route>
+      <Route path="/login" component={Login}></Route>
+      <Route path="/signup" component={Signup}></Route>
     </Router>
 ), document.getElementById('app'));

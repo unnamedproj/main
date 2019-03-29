@@ -1,20 +1,20 @@
-// const express = require('express');
-// const router = express.Router();
-// const passport = require('passport');
+const express = require('express');
+const router = express.Router();
+const passport = require('passport');
 
-// router.post('/signup', passport.authenticate('local-signup'), (req, res, next) => {
-//   if (req.user) {
-//     res.send(200);
-//   } else {
-//     res.send(400);
-//   }
-// });
+router.post('/signup', passport.authenticate('local-signup'), (req, res, next) => {
+  if (req.user) {
+    res.send(200);
+  } else {
+    res.send(400);
+  }
+});
 
-// router.post('/login', passport.authenticate('local-signin'), (req, res, next) => {
-//   if (req.user) {
-//     res.send(200);
-//   } else {
-//     res.send(400);
-//   }
-// });
-// module.exports = router;
+router.post('/login', passport.authenticate('local-signin'), (req, res, next) => {
+  if (req.user) {
+    res.send(200);
+  } else {
+    res.send(400);
+  }
+});
+module.exports = router;
