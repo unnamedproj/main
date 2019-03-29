@@ -24,7 +24,7 @@ module.exports = {
       time: {
         type: Sequelize.STRING
       },
-      customer: {
+      user: {
         type: Sequelize.INTEGER,
         references: {
           model: 'User',
