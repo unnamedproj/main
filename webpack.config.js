@@ -34,9 +34,12 @@ var config = {
       test: /\.css$/,
       loaders: [
         'style?sourceMap',
-        'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]'
+        'style-loader!css-loader'
       ]
-    }]
+    }],
+    resolve: {
+        extensions: ['', '.js', '.jsx', '.css']
+    }
   },
   output: {
     path: BUILD_DIR,

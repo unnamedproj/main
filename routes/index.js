@@ -13,4 +13,11 @@ router.get('/login', (req, res, next) => {
   res.render('index');
 });
 
+router.get('/homepage', (req, res, next) => {
+  res.render('index');
+});
+
+
+
+
 module.exports = router;
