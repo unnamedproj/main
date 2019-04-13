@@ -24,13 +24,13 @@ class Signup extends React.Component {
     this.setState({
       [type]: value
     });
+
+    console.log("This is the state", this.state);
   }
 
   handleSubmit(e) {
     const context = this;
-    console.log('31');
     e.preventDefault();
-
     axios.post('/auth/signup', {
        username: context.state.username,
        password: context.state.password,
@@ -45,7 +45,8 @@ class Signup extends React.Component {
        window.location = '/dashboard'
     })
     .catch((err) => {
-      console.error('Error');
+      window.location = '/homepage'
+      console.log(response);
     })
   }
 
@@ -95,7 +96,7 @@ class Signup extends React.Component {
               />
             <span id="lastName"></span>
             <div className="submit">
-              <button id="submit" type="submit" className="btn btn-success">Sign Up</button>
+              <button id="submit" type="submit" className="signup btn">Sign Up</button>
             </div>
           </div>
         </form>
@@ -106,4 +107,5 @@ class Signup extends React.Component {
   }
 }
 
-module.exports = Signup; 
+
+module.exports = Signup;
