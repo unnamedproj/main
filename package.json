@@ -47,7 +47,7 @@
     "babel-preset-react": "^6.16.0",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-cssmin": "^1.0.2",
-    "nodemon": "^1.11.0",
+    "nodemon": "^1.18.11",
     "react-alice-carousel": "^1.13.11",
     "webpack": "^1.13.2"
   }
