@@ -1,5 +1,5 @@
 'use strict';
-exports.methods = (sequelize, DataTypes) => {
+module.exports = (sequelize, DataTypes) => {
   const Jobs = sequelize.define('Jobs', {
     name: DataTypes.STRING,
     description: DataTypes.STRING,
@@ -12,7 +12,3 @@ exports.methods = (sequelize, DataTypes) => {
   };
   return Jobs;
 };
-
-module.exports = {
-  create: function(name, )
-}
