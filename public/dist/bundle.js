@@ -71,6 +71,10 @@
 	
 	var _index6 = _interopRequireDefault(_index5);
 	
+	var _index7 = __webpack_require__(/*! ./Homepage/index.jsx */ 279);
+	
+	var _index8 = _interopRequireDefault(_index7);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	_reactDom2.default.render(_react2.default.createElement(
@@ -78,7 +82,8 @@
 	  { history: _reactRouter.browserHistory },
 	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _index2.default }),
 	  _react2.default.createElement(_reactRouter.Route, { path: '/login', component: _index4.default }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/signup', component: _index6.default })
+	  _react2.default.createElement(_reactRouter.Route, { path: '/signup', component: _index6.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: '/homepage', component: _index8.default })
 	), document.getElementById('app'));
 
 /***/ }),
@@ -30674,6 +30679,2835 @@
 	}(_react2.default.Component);
 	
 	module.exports = Signup;
+
+/***/ }),
+/* 279 */
+/*!*******************************************!*\
+  !*** ./app/components/Homepage/index.jsx ***!
+  \*******************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _index = __webpack_require__(/*! ../Gallery/index.jsx */ 280);
+	
+	var _index2 = _interopRequireDefault(_index);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	// className is just the JSX version of a html class
+	
+	var Homepage = function (_Component) {
+	  _inherits(Homepage, _Component);
+	
+	  function Homepage() {
+	    _classCallCheck(this, Homepage);
+	
+	    return _possibleConstructorReturn(this, (Homepage.__proto__ || Object.getPrototypeOf(Homepage)).apply(this, arguments));
+	  }
+	
+	  _createClass(Homepage, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'App' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'grid' },
+	          _react2.default.createElement('img', { className: 'logo', src: 'https://lh3.googleusercontent.com/PGj87eT5OroFdd199hELlWMH9xEIN6l9koNdUOMVFX9n3kRewCHURBdtG-N2da0FTdRU' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'wrap' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'search' },
+	              _react2.default.createElement('input', { type: 'text', 'class': 'searchTerm', placeholder: 'What are you looking for?' }),
+	              _react2.default.createElement(
+	                'button',
+	                { type: 'submit', 'class': 'searchButton' },
+	                _react2.default.createElement('i', { 'class': 'fa fa-search' })
+	              )
+	            )
+	          ),
+	          _react2.default.createElement('img', { className: 'logo', src: 'https://lh3.googleusercontent.com/PGj87eT5OroFdd199hELlWMH9xEIN6l9koNdUOMVFX9n3kRewCHURBdtG-N2da0FTdRU' })
+	        ),
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Find a worker!'
+	        ),
+	        _react2.default.createElement(_index2.default, null)
+	      );
+	    }
+	  }]);
+	
+	  return Homepage;
+	}(_react.Component);
+	
+	exports.default = Homepage;
+
+/***/ }),
+/* 280 */
+/*!******************************************!*\
+  !*** ./app/components/Gallery/index.jsx ***!
+  \******************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(/*! react-dom */ 40);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _reactAliceCarousel = __webpack_require__(/*! react-alice-carousel */ 281);
+	
+	var _reactAliceCarousel2 = _interopRequireDefault(_reactAliceCarousel);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	// import "react-alice-carousel/lib/alice-carousel.css";
+	
+	
+	var Gallery = function (_React$Component) {
+	  _inherits(Gallery, _React$Component);
+	
+	  function Gallery(props) {
+	    _classCallCheck(this, Gallery);
+	
+	    var _this = _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).call(this, props));
+	
+	    _this.responsive = {
+	      0: { items: 1 },
+	      1024: { items: 3 }
+	    };
+	
+	    _this.state = {
+	      galleryItems: [_react2.default.createElement('img', { className: 'carimages', src: 'https://www.careerfaqs.com.au/wp-content/uploads/2018/10/How_to_become_a_graphic_designer_612px.jpg' }), _react2.default.createElement('img', { className: 'carimages', src: 'https://ichef.bbci.co.uk/images/ic/640x360/p04vzmvk.jpg' }), _react2.default.createElement('img', { className: 'carimages', src: 'http://www.italianmade.com/ca/wp-content/uploads/2015/05/Rob-Gentile-Buca.jpg' })].map(function (i) {
+	        return _react2.default.createElement(
+	          'h2',
+	          { key: i },
+	          i
+	        );
+	      })
+	    };
+	    return _this;
+	  }
+	
+	  _createClass(Gallery, [{
+	    key: 'onSlideChange',
+	    value: function onSlideChange(e) {
+	      console.debug('Item`s position during a change: ', e.item);
+	      console.debug('Slide`s position during a change: ', e.slide);
+	    }
+	  }, {
+	    key: 'onSlideChanged',
+	    value: function onSlideChanged(e) {
+	      console.debug('Item`s position after changes: ', e.item);
+	      console.debug('Slide`s position after changes: ', e.slide);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(_reactAliceCarousel2.default, {
+	        items: this.state.galleryItems,
+	        responsive: this.responsive,
+	        autoPlayInterval: 2000,
+	        autoPlayDirection: 'rtl',
+	        autoPlay: true,
+	        fadeOutAnimation: true,
+	        mouseDragEnabled: true,
+	        playButtonEnabled: true,
+	        disableAutoPlayOnAction: true,
+	        onSlideChange: this.onSlideChange,
+	        onSlideChanged: this.onSlideChanged
+	      });
+	    }
+	  }]);
+	
+	  return Gallery;
+	}(_react2.default.Component);
+	
+	exports.default = Gallery;
+
+/***/ }),
+/* 281 */
+/*!************************************************************!*\
+  !*** ./~/react-alice-carousel/lib/react-alice-carousel.js ***!
+  \************************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactSwipeable = __webpack_require__(/*! react-swipeable */ 282);
+	
+	var _reactSwipeable2 = _interopRequireDefault(_reactSwipeable);
+	
+	var _utils = __webpack_require__(/*! ./utils */ 286);
+	
+	var Utils = _interopRequireWildcard(_utils);
+	
+	var _views = __webpack_require__(/*! ./views */ 297);
+	
+	var Views = _interopRequireWildcard(_views);
+	
+	var _propTypes = __webpack_require__(/*! ./prop-types */ 303);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var AliceCarousel = function (_React$PureComponent) {
+	  _inherits(AliceCarousel, _React$PureComponent);
+	
+	  function AliceCarousel(props) {
+	    _classCallCheck(this, AliceCarousel);
+	
+	    var _this = _possibleConstructorReturn(this, (AliceCarousel.__proto__ || Object.getPrototypeOf(AliceCarousel)).call(this, props));
+	
+	    _this._handleOnWindowResize = function () {
+	      if (Utils.shouldCallHandlerOnWindowResize(_this.deviceInfo)) {
+	        _this.deviceInfo = Utils.deviceInfo();
+	        _this._disableAnimation();
+	        _this._handleOnMouseEnter();
+	
+	        var isAnimationCanceled = _this._isSwipeAnimationProcessing();
+	        var currState = Utils.calculateInitialProps(_this.props, _this.stageComponent);
+	        var translate3d = Utils.getTranslate3dPosition(currState.currentIndex, currState);
+	        var nextState = _extends({}, currState, { translate3d: translate3d, isAnimationCanceled: isAnimationCanceled });
+	
+	        if (isAnimationCanceled) Utils.animate(_this.stageComponent, translate3d);
+	
+	        _this.setState(nextState, function () {
+	          _this._resetAllIntermediateProps();
+	          _this._handleOnMouseLeave();
+	          _this._onResized();
+	        });
+	      }
+	    };
+	
+	    _this._handleOnAnimationCanceled = function () {
+	      _this._resetAllIntermediateProps();
+	      _this.setState({ isAnimationCanceled: false });
+	    };
+	
+	    _this._handleOnKeyUp = function (e) {
+	      switch (e.keyCode) {
+	        case 32:
+	          return _this._handleOnSpaceBarClick();
+	        case 37:
+	          return _this._slidePrev();
+	        case 39:
+	          return _this._slideNext();
+	      }
+	    };
+	
+	    _this._handleOnSpaceBarClick = function () {
+	      _this.props.autoPlay && _this._playPauseToggle();
+	    };
+	
+	    _this._handleOnMouseEnter = function () {
+	      if (_this.props.stopAutoPlayOnHover) {
+	        _this.isHovered = true;
+	      }
+	    };
+	
+	    _this._handleOnMouseLeave = function () {
+	      _this.isHovered = false;
+	    };
+	
+	    _this._onSlideToIndexChange = function (currentIndex, slideToIndex) {
+	      if (slideToIndex === currentIndex + 1) {
+	        _this._slideNext();
+	      } else if (slideToIndex === currentIndex - 1) {
+	        _this._slidePrev();
+	      } else {
+	        _this._onDotClick(slideToIndex);
+	      }
+	    };
+	
+	    _this._onInactiveItem = function () {
+	      _this._onSlideChange();
+	      _this._onSlideChanged();
+	      _this._allowAnimation();
+	      _this._pause();
+	    };
+	
+	    _this._onDotClick = function (itemIndex) {
+	      if (_this._isClickDisabled(itemIndex)) return;
+	
+	      _this._disableAnimation();
+	      _this._isFadeOutAnimationAllowed() && _this.setAnimationPropsOnDotClick(itemIndex);
+	      _this.props.disableAutoPlayOnAction && _this._pause();
+	      _this._slideToItem(itemIndex);
+	    };
+	
+	    _this._recalculateFadeOutAnimationState = function (shouldRecalculate) {
+	      if (shouldRecalculate || _this._isFadeOutAnimationAllowed()) {
+	        return { fadeoutAnimationProcessing: false };
+	      }
+	      return {};
+	    };
+	
+	    _this._getStageComponentNode = function (node) {
+	      return _this.stageComponent = node;
+	    };
+	
+	    _this._allowAnimation = function () {
+	      return _this.allowAnimation = true;
+	    };
+	
+	    _this._disableAnimation = function () {
+	      return _this.allowAnimation = false;
+	    };
+	
+	    _this._skipSlidePositionRecalculation = function () {
+	      if (_this._isFadeOutAnimationAllowed()) {
+	        return _this._resetFadeOutAnimationState();
+	      }
+	
+	      _this._onSlideChanged();
+	      _this.props.disableAutoPlayOnAction && _this._pause();
+	      _this.isHovered = false;
+	    };
+	
+	    _this._updateSlidePosition = function () {
+	      _this._updateSlidePositionIntervalId = setTimeout(function () {
+	        if (_this._shouldRecalculatePosition()) {
+	          _this._recalculateSlidePosition();
+	        } else if (_this._isFadeOutAnimationAllowed()) {
+	          _this._resetFadeOutAnimationState();
+	        } else {
+	          _this._onSlideChanged();
+	        }
+	      }, _this.state.duration);
+	    };
+	
+	    _this._resetFadeOutAnimationState = function () {
+	      _this.setState({ fadeoutAnimationProcessing: false }, _this._onSlideChanged);
+	    };
+	
+	    _this._resetAllIntermediateProps = function () {
+	      _this.swipingStarted = false;
+	      _this.verticalSwipingDetected = false;
+	
+	      _this._stopSwipeAnimation();
+	      _this._resetAnimationProps();
+	      _this._resetSwipePositionProps();
+	      _this._clearUpdateSlidePositionIntervalId();
+	      _this._resetTranslateAnimationProcessingFlag();
+	      _this._allowAnimation();
+	    };
+	
+	    _this._recalculateSlidePosition = function () {
+	      var style = Utils.getDefaultStyle();
+	      var currentIndex = Utils.recalculateCurrentSlideIndex(_this.state);
+	      var translate3d = Utils.recalculateTranslatePosition(_this.state);
+	
+	      _this.setState(_extends({
+	        currentIndex: currentIndex,
+	        translate3d: translate3d,
+	        style: style
+	      }, _this._recalculateFadeOutAnimationState()), function () {
+	        return _this._onSlideChanged();
+	      });
+	    };
+	
+	    _this._getEventObject = function () {
+	      var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _this.state;
+	      var itemsInSlide = state.items,
+	          item = state.currentIndex;
+	
+	      var _Utils$itemInfo = Utils.itemInfo(state),
+	          isNextSlideDisabled = _Utils$itemInfo.isNextSlideDisabled;
+	
+	      var slide = Utils.getActiveSlideIndex(isNextSlideDisabled, state);
+	
+	      return { item: item, slide: slide, itemsInSlide: itemsInSlide };
+	    };
+	
+	    _this.setAnimationPropsOnDotClick = function (itemIndex) {
+	      var _this$state = _this.state,
+	          currentIndex = _this$state.currentIndex,
+	          itemWidth = _this$state.itemWidth;
+	
+	      var fadeOutIndex = currentIndex + 1;
+	      var fadeOutOffset = Utils.getFadeOutOffsetOnDotClick(itemIndex, currentIndex, itemWidth);
+	
+	      _this._setAnimationProps({ fadeOutIndex: fadeOutIndex, fadeOutOffset: fadeOutOffset, allowFadeOutAnimation: true });
+	    };
+	
+	    _this._pause = function () {
+	      if (_this._autoPlayIntervalId) {
+	        _this._clearAutoPlayInterval();
+	        _this.setState({ isPlaying: false });
+	      }
+	    };
+	
+	    _this._playPauseToggle = function () {
+	      if (!_this.allowAnimation) return;
+	      _this.state.isPlaying ? _this._pause() : _this._play();
+	    };
+	
+	    _this._intermediateStateProps = function (duration, shouldSkipRecalculation) {
+	      var condition = !shouldSkipRecalculation && _this._isFadeOutAnimationAllowed();
+	      return Utils.intermediateTransitionProps(condition, duration);
+	    };
+	
+	    _this._addTouchEventToCallstack = function () {
+	      _this.touchEventsCallstack.push(1);
+	    };
+	
+	    _this._removeTouchEventFromCallstack = function () {
+	      _this.touchEventsCallstack.pop();
+	    };
+	
+	    _this._setTranslateAnimationProcessingFlag = function () {
+	      _this.translateAnimationProcessing = true;
+	    };
+	
+	    _this._resetTranslateAnimationProcessingFlag = function () {
+	      _this.translateAnimationProcessing = false;
+	    };
+	
+	    _this._startSwipeAnimation = function () {
+	      _this.swipeAnimation = true;
+	    };
+	
+	    _this._stopSwipeAnimation = function () {
+	      _this.swipeAnimation = false;
+	    };
+	
+	    _this._setAnimationProps = function (newProps) {
+	      var prevProps = _this.animationProps || {};
+	      _this.animationProps = _extends({}, prevProps, newProps);
+	    };
+	
+	    _this._resetAnimationProps = function () {
+	      _this.animationProps = {};
+	    };
+	
+	    _this._setSwipePositionProps = function (newProps) {
+	      var prevProps = _this.swipePosition || {};
+	      _this.swipePosition = _extends({}, prevProps, newProps);
+	    };
+	
+	    _this._resetSwipePositionProps = function () {
+	      _this.swipePosition = {};
+	    };
+	
+	    _this._getTranslateXPosition = function (deltaX) {
+	      var translate3d = _this.state.translate3d;
+	      var _this$swipePosition$s = _this.swipePosition.startPosition,
+	          startPosition = _this$swipePosition$s === undefined ? translate3d : _this$swipePosition$s;
+	
+	
+	      if (!!_this.touchEventsCallstack.length && _this.translateAnimationProcessing) {
+	        _this._resetTranslateAnimationProcessingFlag();
+	        var lastTranslateXPosition = Utils.getTranslateX(_this.stageComponent);
+	
+	        if (lastTranslateXPosition) {
+	          return lastTranslateXPosition - deltaX;
+	        }
+	      }
+	      return startPosition - deltaX;
+	    };
+	
+	    _this._onTouchEnd = function () {
+	      _this.swipingStarted = false;
+	
+	      if (_this._isSwipeDisable()) {
+	        return;
+	      }
+	
+	      _this._addTouchEventToCallstack();
+	      _this._setSwipePositionProps({ startPosition: _this.swipePosition.position });
+	      _this._beforeTouchEnd();
+	    };
+	
+	    _this._isHovered = function () {
+	      return _this.isHovered;
+	    };
+	
+	    _this._isClickDisabled = function (itemIndex) {
+	      var _this$state2 = _this.state,
+	          currentIndex = _this$state2.currentIndex,
+	          isAnimationCanceled = _this$state2.isAnimationCanceled;
+	
+	      return currentIndex === itemIndex || isAnimationCanceled || !_this.allowAnimation || _this.swipeAnimation;
+	    };
+	
+	    _this._isFadeOutAnimationAllowed = function () {
+	      var _this$state3 = _this.state,
+	          stagePadding = _this$state3.stagePadding,
+	          items = _this$state3.items;
+	
+	      var hasNoStagePadding = !(stagePadding.paddingLeft || stagePadding.paddingRight);
+	
+	      return _this.props.fadeOutAnimation && items === 1 && hasNoStagePadding;
+	    };
+	
+	    _this._isSwipeDisable = function () {
+	      var _this$state4 = _this.state,
+	          isAnimationCanceled = _this$state4.isAnimationCanceled,
+	          fadeOutAnimation = _this$state4.fadeOutAnimation;
+	
+	      return _this.props.swipeDisabled || fadeOutAnimation || isAnimationCanceled || _this.verticalSwipingDetected;
+	    };
+	
+	    _this._isSwipeAnimationLastFrame = function () {
+	      return !_this.swipingStarted && _this.touchEventsCallstack.length === 0;
+	    };
+	
+	    _this._isSwipeAnimationProcessing = function () {
+	      return !!_this.touchEventsCallstack.length;
+	    };
+	
+	    _this._shouldRecalculatePosition = function () {
+	      var _this$state5 = _this.state,
+	          slides = _this$state5.slides,
+	          currentIndex = _this$state5.currentIndex;
+	
+	      return currentIndex < 0 || currentIndex >= slides.length;
+	    };
+	
+	    _this._setAnimationPropsOnClick = function (direction) {
+	      var _this$state6 = _this.state,
+	          currentIndex = _this$state6.currentIndex,
+	          itemWidth = _this$state6.itemWidth;
+	
+	      var fadeOutIndex = Utils.getFadeOutIndexOnClick(currentIndex);
+	      var fadeOutOffset = Utils.getFadeOutOffsetOnClick(direction, itemWidth);
+	
+	      _this._setAnimationProps({ fadeOutIndex: fadeOutIndex, fadeOutOffset: fadeOutOffset, allowFadeOutAnimation: true });
+	    };
+	
+	    _this._slidePrev = function () {
+	      var action = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
+	
+	      if (_this._isClickDisabled()) return;
+	
+	      _this._disableAnimation();
+	      _this._isFadeOutAnimationAllowed() && _this._setAnimationPropsOnClick('prev');
+	
+	      if (Utils.itemInfo(_this.state).isPrevSlideDisabled) return _this._onInactiveItem();
+	      if (action && _this.props.disableAutoPlayOnAction) _this._pause();
+	
+	      _this._slideToItem(_this.state.currentIndex - 1);
+	    };
+	
+	    _this._slideNext = function () {
+	      var action = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
+	
+	      if (_this._isClickDisabled()) return;
+	
+	      _this._disableAnimation();
+	      _this._isFadeOutAnimationAllowed() && _this._setAnimationPropsOnClick('next');
+	
+	      if (Utils.itemInfo(_this.state).isNextSlideDisabled) return _this._onInactiveItem();
+	      if (action && _this.props.disableAutoPlayOnAction) _this._pause();
+	
+	      _this._slideToItem(_this.state.currentIndex + 1);
+	    };
+	
+	    _this._renderSlideInfo = function () {
+	      var _this$state7 = _this.state,
+	          currentIndex = _this$state7.currentIndex,
+	          slides = _this$state7.slides;
+	
+	      return _react2.default.createElement(Views.SlideInfo, { slidesLength: slides.length, currentIndex: currentIndex });
+	    };
+	
+	    _this._renderStageItem = function (item, i) {
+	      var style = Utils.itemStyles(i, _this.state, _this.animationProps);
+	      var className = Utils.itemClassName(i, _this.state, _this.animationProps);
+	      return _react2.default.createElement(Views.StageItem, { styles: style, className: className, key: 'stage-item-' + i, item: item });
+	    };
+	
+	    _this.state = {
+	      clones: [],
+	      stagePadding: {},
+	      currentIndex: 1,
+	      duration: props.duration,
+	      slides: Utils.getSlides(props),
+	      style: Utils.getDefaultStyle()
+	    };
+	
+	    _this.touchEventsCallstack = [];
+	    _this._onTouchMove = _this._onTouchMove.bind(_this);
+	    _this.handleOnResize = Utils.debounce(_this._handleOnWindowResize, 100);
+	    return _this;
+	  }
+	
+	  _createClass(AliceCarousel, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      this._setInitialState();
+	      this._resetAllIntermediateProps();
+	
+	      window.addEventListener('resize', this.handleOnResize);
+	
+	      if (!this.props.keysControlDisabled) {
+	        window.addEventListener('keyup', this._handleOnKeyUp);
+	      }
+	
+	      this.deviceInfo = Utils.deviceInfo();
+	      this.props.autoPlay && this._play();
+	    }
+	  }, {
+	    key: 'componentDidUpdate',
+	    value: function componentDidUpdate(prevProps) {
+	      if (this.props.duration !== prevProps.duration) {
+	        this.setState({ duration: this.props.duration });
+	      }
+	
+	      if (this.props.fadeOutAnimation !== prevProps.fadeOutAnimation) {
+	        this.setState({ fadeoutAnimationProcessing: false }, this._resetAnimationProps);
+	      }
+	
+	      if (this.props.slideToIndex !== prevProps.slideToIndex) {
+	        this._onSlideToIndexChange(this.state.currentIndex, this.props.slideToIndex);
+	      }
+	
+	      if (this.props.disableAutoPlayOnAction !== prevProps.disableAutoPlayOnAction || this.props.autoPlayDirection !== prevProps.autoPlayDirection || this.props.autoPlayInterval !== prevProps.autoPlayInterval || this.props.infinite !== prevProps.infinite || this.props.autoPlay !== prevProps.autoPlay) {
+	        this.props.autoPlay ? this._play() : this._pause();
+	      }
+	
+	      if (this.props.stagePadding !== prevProps.stagePadding || this.props.responsive !== prevProps.responsive || this.props.infinite !== prevProps.infinite || this.props.items !== prevProps.items) {
+	        this._resetAllIntermediateProps();
+	        this.setState(Utils.calculateInitialProps(this.props, this.stageComponent));
+	      }
+	
+	      if (this.props.keysControlDisabled !== prevProps.keysControlDisabled) {
+	        this.props.keysControlDisabled ? window.removeEventListener('keyup', this._handleOnKeyUp) : window.addEventListener('keyup', this._handleOnKeyUp);
+	      }
+	    }
+	  }, {
+	    key: 'componentWillUnmount',
+	    value: function componentWillUnmount() {
+	      window.removeEventListener('resize', this.handleOnResize);
+	
+	      if (!this.props.keysControlDisabled) {
+	        window.removeEventListener('keyup', this._handleOnKeyUp);
+	      }
+	
+	      if (this._autoPlayIntervalId) {
+	        clearInterval(this._autoPlayIntervalId);
+	        this._autoPlayIntervalId = null;
+	      }
+	    }
+	  }, {
+	    key: '_onSlideChange',
+	    value: function _onSlideChange() {
+	      if (this.props.onSlideChange) {
+	        this.props.onSlideChange(this._getEventObject());
+	      }
+	    }
+	  }, {
+	    key: '_onSlideChanged',
+	    value: function _onSlideChanged() {
+	      if (this.props.onSlideChanged) {
+	        this.props.onSlideChanged(this._getEventObject());
+	      }
+	      this._allowAnimation();
+	    }
+	  }, {
+	    key: '_onInitialized',
+	    value: function _onInitialized(initialState) {
+	      if (this.props.onInitialized) {
+	        this.props.onInitialized(this._getEventObject(initialState));
+	      }
+	    }
+	  }, {
+	    key: '_onResized',
+	    value: function _onResized() {
+	      if (this.props.onResized) {
+	        this.props.onResized(this._getEventObject());
+	      }
+	    }
+	  }, {
+	    key: '_setInitialState',
+	    value: function _setInitialState() {
+	      var initialState = Utils.calculateInitialProps(this.props, this.stageComponent);
+	      this.setState(initialState, this._onInitialized(initialState));
+	    }
+	  }, {
+	    key: '_checkSlidePosition',
+	    value: function _checkSlidePosition(shouldSkipRecalculation) {
+	      this._stopSwipeAnimation();
+	      this._resetAnimationProps();
+	      this._resetSwipePositionProps();
+	
+	      shouldSkipRecalculation ? this._skipSlidePositionRecalculation() : this._updateSlidePosition();
+	    }
+	  }, {
+	    key: '_setAutoPlayInterval',
+	    value: function _setAutoPlayInterval() {
+	      var _this2 = this;
+	
+	      var duration = this.state.duration;
+	      var _props = this.props,
+	          autoPlayDirection = _props.autoPlayDirection,
+	          autoPlayInterval = _props.autoPlayInterval;
+	
+	      var playInterval = Math.max(autoPlayInterval, duration);
+	
+	      this._autoPlayIntervalId = setInterval(function () {
+	        if (!_this2._isHovered() && _this2._autoPlayIntervalId && _this2.state.isPlaying) {
+	          autoPlayDirection === 'rtl' ? _this2._slidePrev(false) : _this2._slideNext(false);
+	        }
+	      }, playInterval);
+	    }
+	  }, {
+	    key: '_clearAutoPlayInterval',
+	    value: function _clearAutoPlayInterval() {
+	      clearInterval(this._autoPlayIntervalId);
+	      this._autoPlayIntervalId = null;
+	    }
+	  }, {
+	    key: '_clearUpdateSlidePositionIntervalId',
+	    value: function _clearUpdateSlidePositionIntervalId() {
+	      clearInterval(this._updateSlidePositionIntervalId);
+	    }
+	  }, {
+	    key: '_play',
+	    value: function _play() {
+	      this.setState({ isPlaying: true });
+	      if (!this._autoPlayIntervalId) {
+	        this._setAutoPlayInterval();
+	      }
+	    }
+	  }, {
+	    key: '_slideToItem',
+	    value: function _slideToItem(index) {
+	      var _this3 = this;
+	
+	      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	
+	      this._onSlideChange();
+	      var _options$duration = options.duration,
+	          duration = _options$duration === undefined ? this.state.duration : _options$duration,
+	          _options$shouldSkipRe = options.shouldSkipRecalculation,
+	          shouldSkipRecalculation = _options$shouldSkipRe === undefined ? false : _options$shouldSkipRe;
+	
+	      var translate3d = Utils.getTranslate3dPosition(index, this.state);
+	
+	      this.setState(_extends({
+	        currentIndex: index,
+	        translate3d: translate3d
+	      }, this._intermediateStateProps(duration, shouldSkipRecalculation)), function () {
+	        return _this3._checkSlidePosition(shouldSkipRecalculation);
+	      });
+	    }
+	  }, {
+	    key: '_onTouchMove',
+	    value: function _onTouchMove(e, deltaX, deltaY) {
+	      this.swipingStarted = true;
+	      this._handleOnMouseEnter();
+	
+	      if (Utils.isVerticalTouchMoveDetected(e, deltaX, deltaY)) {
+	        this.verticalSwipingDetected = true;
+	        return;
+	      } else {
+	        this.verticalSwipingDetected = false;
+	      }
+	
+	      if (this._isSwipeDisable()) {
+	        return;
+	      }
+	
+	      this._disableAnimation();
+	      this._startSwipeAnimation();
+	      this._clearUpdateSlidePositionIntervalId();
+	
+	      var _state = this.state,
+	          slides = _state.slides,
+	          items = _state.items,
+	          itemWidth = _state.itemWidth,
+	          infinite = _state.infinite,
+	          stagePadding = _state.stagePadding;
+	
+	      var slidesLength = slides.length;
+	      var direction = Utils.getSwipeDirection(deltaX);
+	      var position = this._getTranslateXPosition(deltaX);
+	
+	      if (infinite === false) {
+	        var _minSwipeLimit = Utils.getMinSwipeLimitIfNotInfinite(items, itemWidth);
+	        var _maxSwipeLimit = Utils.getMaxSwipeLimitIfNotInfinite(slidesLength, itemWidth);
+	
+	        if (Utils.shouldRecalculateSwipePosition(position, _minSwipeLimit, _maxSwipeLimit)) {
+	          return;
+	        }
+	
+	        Utils.animate(this.stageComponent, position);
+	        this._setSwipePositionProps({ position: position, direction: direction });
+	        return;
+	      }
+	
+	      var maxPosition = Utils.getMaxSwipePosition(items, itemWidth, slidesLength);
+	      var minPosition = Utils.getMinSwipePosition(items, itemWidth);
+	      var maxSwipeLimit = Utils.getMaxSwipeLimit(maxPosition, stagePadding);
+	      var minSwipeLimit = Utils.getMinSwipeLimit(minPosition, stagePadding);
+	
+	      if (Utils.shouldRecalculateSwipePosition(position, minSwipeLimit, maxSwipeLimit)) {
+	        try {
+	          recalculatePosition();
+	        } catch (err) {
+	          Utils.debug(err);
+	        }
+	      }
+	
+	      Utils.animate(this.stageComponent, position);
+	      this._setSwipePositionProps({ position: position, direction: direction });
+	
+	      function recalculatePosition() {
+	        direction === 'RIGHT' ? position = position + slidesLength * -itemWidth : position = position + maxPosition - items * itemWidth;
+	
+	        if (Utils.shouldRecalculateSwipePosition(position, minSwipeLimit, maxSwipeLimit)) {
+	          recalculatePosition();
+	        }
+	      }
+	    }
+	  }, {
+	    key: '_beforeTouchEnd',
+	    value: function _beforeTouchEnd() {
+	      var _this4 = this;
+	
+	      var _swipePosition = this.swipePosition,
+	          direction = _swipePosition.direction,
+	          position = _swipePosition.position;
+	      var _state2 = this.state,
+	          itemWidth = _state2.itemWidth,
+	          items = _state2.items,
+	          duration = _state2.duration,
+	          infinite = _state2.infinite;
+	
+	      var swipeIndex = Utils.calculateSwipeIndex(itemWidth, position, direction);
+	      var currentIndex = Utils.getSwipeIndexOnBeforeTouchEnd(swipeIndex, items);
+	      var translateXPosition = Utils.getSwipePositionOnBeforeTouchEnd(swipeIndex, itemWidth);
+	
+	      if (infinite === false) {
+	        this._isInfiniteModeDisabledBeforeTouchEnd(swipeIndex, currentIndex);
+	        return;
+	      }
+	
+	      this._setTranslateAnimationProcessingFlag();
+	      Utils.animate(this.stageComponent, translateXPosition, duration);
+	
+	      setTimeout(function () {
+	        _this4._removeTouchEventFromCallstack();
+	        _this4._resetTranslateAnimationProcessingFlag();
+	
+	        if (_this4._isSwipeAnimationLastFrame()) {
+	          if (_this4.state.isAnimationCanceled) {
+	            return _this4._handleOnAnimationCanceled();
+	          }
+	
+	          var nextItemIndex = Utils.getNextItemIndexBeforeTouchEnd(translateXPosition, _this4.state);
+	          var nextTranslateXPosition = Utils.getTranslate3dPosition(nextItemIndex, _this4.state);
+	
+	          Utils.animate(_this4.stageComponent, nextTranslateXPosition, 0);
+	          _this4._slideToItem(nextItemIndex, { duration: 0, shouldSkipRecalculation: true });
+	        }
+	      }, duration);
+	    }
+	  }, {
+	    key: '_isInfiniteModeDisabledBeforeTouchEnd',
+	    value: function _isInfiniteModeDisabledBeforeTouchEnd(swipeIndex, currentIndex) {
+	      var _this5 = this;
+	
+	      var _state3 = this.state,
+	          items = _state3.items,
+	          itemWidth = _state3.itemWidth,
+	          duration = _state3.duration,
+	          slides = _state3.slides;
+	
+	      var position = Utils.getTranslate3dPosition(currentIndex, { itemWidth: itemWidth, items: items });
+	
+	      if (swipeIndex < items) {
+	        currentIndex = Utils.recalculateCurrentIndexOnBeforeTouchEnd();
+	        position = Utils.recalculatePositionOnBeforeTouchEnd(items, itemWidth);
+	      }
+	
+	      if (swipeIndex > slides.length) {
+	        currentIndex = Utils.recalculateCurrentIndexOnBeforeTouchEnd(slides.length, items);
+	        position = Utils.recalculatePositionOnBeforeTouchEnd(slides.length, itemWidth);
+	      }
+	
+	      Utils.animate(this.stageComponent, position, duration);
+	      this._setTranslateAnimationProcessingFlag();
+	
+	      setTimeout(function () {
+	        _this5._removeTouchEventFromCallstack();
+	        _this5._resetTranslateAnimationProcessingFlag();
+	
+	        if (_this5._isSwipeAnimationLastFrame()) {
+	          if (_this5.state.isAnimationCanceled) {
+	            return _this5._handleOnAnimationCanceled();
+	          }
+	
+	          Utils.animate(_this5.stageComponent, position);
+	          _this5._slideToItem(currentIndex, { duration: 0, shouldSkipRecalculation: true });
+	        }
+	      }, duration);
+	    }
+	  }, {
+	    key: '_renderPrevButton',
+	    value: function _renderPrevButton() {
+	      var _Utils$itemInfo2 = Utils.itemInfo(this.state),
+	          isPrevSlideDisabled = _Utils$itemInfo2.isPrevSlideDisabled;
+	
+	      return _react2.default.createElement(Views.PrevNextButton, {
+	        name: 'prev',
+	        disabled: isPrevSlideDisabled,
+	        onClick: this._slidePrev,
+	        onMouseEnter: this._handleOnMouseEnter,
+	        onMouseLeave: this._handleOnMouseLeave
+	      });
+	    }
+	  }, {
+	    key: '_renderNextButton',
+	    value: function _renderNextButton() {
+	      var _Utils$itemInfo3 = Utils.itemInfo(this.state),
+	          isNextSlideDisabled = _Utils$itemInfo3.isNextSlideDisabled;
+	
+	      return _react2.default.createElement(Views.PrevNextButton, {
+	        name: 'next',
+	        disabled: isNextSlideDisabled,
+	        onClick: this._slideNext,
+	        onMouseEnter: this._handleOnMouseEnter,
+	        onMouseLeave: this._handleOnMouseLeave
+	      });
+	    }
+	  }, {
+	    key: '_renderPlayPauseButton',
+	    value: function _renderPlayPauseButton() {
+	      return _react2.default.createElement(Views.PlayPauseButton, { isPlaying: this.state.isPlaying, onClick: this._playPauseToggle });
+	    }
+	  }, {
+	    key: '_renderDotsNavigation',
+	    value: function _renderDotsNavigation() {
+	      return _react2.default.createElement(Views.DotsNavigation, {
+	        state: this.state,
+	        onClick: this._onDotClick,
+	        onMouseEnter: this._handleOnMouseEnter,
+	        onMouseLeave: this._handleOnMouseLeave
+	      });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _state4 = this.state,
+	          style = _state4.style,
+	          translate3d = _state4.translate3d,
+	          clones = _state4.clones;
+	
+	      var stagePadding = Utils.getStagePadding(this.props);
+	      var wrapperStyle = Utils.wrapperStyle(stagePadding);
+	      var stageStyle = Utils.stageStyle(style, { translate3d: translate3d });
+	
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'alice-carousel' },
+	        _react2.default.createElement(
+	          _reactSwipeable2.default,
+	          {
+	            rotationAngle: 3,
+	            stopPropagation: true,
+	            onSwiping: this._onTouchMove,
+	            onSwiped: this._onTouchEnd,
+	            trackMouse: this.props.mouseDragEnabled,
+	            preventDefaultTouchmoveEvent: this.props.preventEventOnTouchMove
+	          },
+	          _react2.default.createElement(
+	            'div',
+	            {
+	              style: wrapperStyle,
+	              className: 'alice-carousel__wrapper',
+	              onMouseEnter: this._handleOnMouseEnter,
+	              onMouseLeave: this._handleOnMouseLeave
+	            },
+	            _react2.default.createElement(
+	              'ul',
+	              { style: stageStyle, className: 'alice-carousel__stage', ref: this._getStageComponentNode },
+	              clones.map(this._renderStageItem)
+	            )
+	          )
+	        ),
+	        this.props.showSlideInfo ? this._renderSlideInfo() : null,
+	        !this.props.dotsDisabled ? this._renderDotsNavigation() : null,
+	        !this.props.buttonsDisabled ? this._renderPrevButton() : null,
+	        !this.props.buttonsDisabled ? this._renderNextButton() : null,
+	        this.props.playButtonEnabled ? this._renderPlayPauseButton() : null
+	      );
+	    }
+	  }]);
+	
+	  return AliceCarousel;
+	}(_react2.default.PureComponent);
+	
+	exports.default = AliceCarousel;
+	
+	
+	AliceCarousel.propTypes = _propTypes.propTypes;
+	AliceCarousel.defaultProps = _propTypes.defaultProps;
+
+/***/ }),
+/* 282 */
+/*!********************************************!*\
+  !*** ./~/react-swipeable/lib/Swipeable.js ***!
+  \********************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var PropTypes = __webpack_require__(/*! prop-types */ 283);
+	var DetectPassiveEvents = __webpack_require__(/*! detect-passive-events */ 285).default;
+	
+	function getInitialState() {
+	  return {
+	    x: null,
+	    y: null,
+	    swiping: false,
+	    start: 0
+	  };
+	}
+	
+	function getMovingPosition(e) {
+	  return 'changedTouches' in e ? { x: e.changedTouches[0].clientX, y: e.changedTouches[0].clientY } : { x: e.clientX, y: e.clientY };
+	}
+	function getPosition(e) {
+	  return 'touches' in e ? { x: e.touches[0].clientX, y: e.touches[0].clientY } : { x: e.clientX, y: e.clientY };
+	}
+	
+	function rotateByAngle(pos, angle) {
+	  if (angle === 0) {
+	    return pos;
+	  }
+	
+	  var x = pos.x,
+	      y = pos.y;
+	
+	
+	  var angleInRadians = Math.PI / 180 * angle;
+	  var rotatedX = x * Math.cos(angleInRadians) + y * Math.sin(angleInRadians);
+	  var rotatedY = y * Math.cos(angleInRadians) - x * Math.sin(angleInRadians);
+	  return { x: rotatedX, y: rotatedY };
+	}
+	
+	function calculatePos(e, state) {
+	  var _rotateByAngle = rotateByAngle(getMovingPosition(e), state.rotationAngle),
+	      x = _rotateByAngle.x,
+	      y = _rotateByAngle.y;
+	
+	  var deltaX = state.x - x;
+	  var deltaY = state.y - y;
+	
+	  var absX = Math.abs(deltaX);
+	  var absY = Math.abs(deltaY);
+	
+	  var time = Date.now() - state.start;
+	  var velocity = Math.sqrt(absX * absX + absY * absY) / time;
+	
+	  return { deltaX: deltaX, deltaY: deltaY, absX: absX, absY: absY, velocity: velocity };
+	}
+	
+	var Swipeable = function (_React$Component) {
+	  _inherits(Swipeable, _React$Component);
+	
+	  function Swipeable(props, context) {
+	    _classCallCheck(this, Swipeable);
+	
+	    var _this = _possibleConstructorReturn(this, _React$Component.call(this, props, context));
+	
+	    _this.swipeable = getInitialState();
+	
+	    _this.eventStart = _this.eventStart.bind(_this);
+	    _this.eventMove = _this.eventMove.bind(_this);
+	    _this.eventEnd = _this.eventEnd.bind(_this);
+	    _this.mouseDown = _this.mouseDown.bind(_this);
+	    _this.mouseMove = _this.mouseMove.bind(_this);
+	    _this.mouseUp = _this.mouseUp.bind(_this);
+	    _this.cleanupMouseListeners = _this.cleanupMouseListeners.bind(_this);
+	    _this.setupMouseListeners = _this.setupMouseListeners.bind(_this);
+	    _this.elementRef = _this.elementRef.bind(_this);
+	    _this.setupTouchmoveEvent = _this.setupTouchmoveEvent.bind(_this);
+	    _this.cleanupTouchmoveEvent = _this.cleanupTouchmoveEvent.bind(_this);
+	
+	    _this.hasPassiveSupport = DetectPassiveEvents.hasSupport;
+	    return _this;
+	  }
+	
+	  Swipeable.prototype.componentDidMount = function componentDidMount() {
+	    if (this.props.preventDefaultTouchmoveEvent) {
+	      this.setupTouchmoveEvent();
+	    }
+	  };
+	
+	  Swipeable.prototype.componentDidUpdate = function componentDidUpdate(prevProps) {
+	    if (prevProps.disabled !== this.props.disabled) {
+	      this.cleanupMouseListeners();
+	
+	      this.swipeable = getInitialState();
+	    }
+	
+	    if (prevProps.preventDefaultTouchmoveEvent && !this.props.preventDefaultTouchmoveEvent) {
+	      this.cleanupTouchmoveEvent();
+	    } else if (!prevProps.preventDefaultTouchmoveEvent && this.props.preventDefaultTouchmoveEvent) {
+	      this.setupTouchmoveEvent();
+	    }
+	  };
+	
+	  Swipeable.prototype.componentWillUnmount = function componentWillUnmount() {
+	    this.cleanupMouseListeners();
+	  };
+	
+	  Swipeable.prototype.setupTouchmoveEvent = function setupTouchmoveEvent() {
+	    if (this.element && this.hasPassiveSupport) {
+	      this.element.addEventListener('touchmove', this.eventMove, { passive: false });
+	    }
+	  };
+	
+	  Swipeable.prototype.setupMouseListeners = function setupMouseListeners() {
+	    document.addEventListener('mousemove', this.mouseMove);
+	    document.addEventListener('mouseup', this.mouseUp);
+	  };
+	
+	  Swipeable.prototype.cleanupTouchmoveEvent = function cleanupTouchmoveEvent() {
+	    if (this.element && this.hasPassiveSupport) {
+	      this.element.removeEventListener('touchmove', this.eventMove, { passive: false });
+	    }
+	  };
+	
+	  Swipeable.prototype.cleanupMouseListeners = function cleanupMouseListeners() {
+	    document.removeEventListener('mousemove', this.mouseMove);
+	    document.removeEventListener('mouseup', this.mouseUp);
+	  };
+	
+	  Swipeable.prototype.mouseDown = function mouseDown(e) {
+	    if (!this.props.trackMouse || e.type !== 'mousedown') {
+	      return;
+	    }
+	
+	    if (typeof this.props.onMouseDown === 'function') this.props.onMouseDown(e);
+	
+	    this.setupMouseListeners();
+	
+	    this.eventStart(e);
+	  };
+	
+	  Swipeable.prototype.mouseMove = function mouseMove(e) {
+	    this.eventMove(e);
+	  };
+	
+	  Swipeable.prototype.mouseUp = function mouseUp(e) {
+	    this.cleanupMouseListeners();
+	    this.eventEnd(e);
+	  };
+	
+	  Swipeable.prototype.eventStart = function eventStart(e) {
+	    if (e.touches && e.touches.length > 1) return;
+	
+	    var rotationAngle = this.props.rotationAngle;
+	
+	    var _rotateByAngle2 = rotateByAngle(getPosition(e), rotationAngle),
+	        x = _rotateByAngle2.x,
+	        y = _rotateByAngle2.y;
+	
+	    if (this.props.stopPropagation) e.stopPropagation();
+	
+	    this.swipeable = { start: Date.now(), x: x, y: y, swiping: false, rotationAngle: rotationAngle };
+	  };
+	
+	  Swipeable.prototype.eventMove = function eventMove(e) {
+	    var _props = this.props,
+	        stopPropagation = _props.stopPropagation,
+	        delta = _props.delta,
+	        onSwiping = _props.onSwiping,
+	        onSwiped = _props.onSwiped,
+	        onSwipingLeft = _props.onSwipingLeft,
+	        onSwipedLeft = _props.onSwipedLeft,
+	        onSwipingRight = _props.onSwipingRight,
+	        onSwipedRight = _props.onSwipedRight,
+	        onSwipingUp = _props.onSwipingUp,
+	        onSwipedUp = _props.onSwipedUp,
+	        onSwipingDown = _props.onSwipingDown,
+	        onSwipedDown = _props.onSwipedDown,
+	        preventDefaultTouchmoveEvent = _props.preventDefaultTouchmoveEvent;
+	
+	
+	    if (!this.swipeable.x || !this.swipeable.y || e.touches && e.touches.length > 1) {
+	      return;
+	    }
+	
+	    var pos = calculatePos(e, this.swipeable);
+	
+	    if (pos.absX < delta && pos.absY < delta && !this.swipeable.swiping) return;
+	
+	    if (stopPropagation) e.stopPropagation();
+	
+	    if (onSwiping) {
+	      onSwiping(e, pos.deltaX, pos.deltaY, pos.absX, pos.absY, pos.velocity);
+	    }
+	
+	    var cancelablePageSwipe = false;
+	    if (onSwiping || onSwiped) {
+	      cancelablePageSwipe = true;
+	    }
+	
+	    if (pos.absX > pos.absY) {
+	      if (pos.deltaX > 0) {
+	        if (onSwipingLeft || onSwipedLeft) {
+	          onSwipingLeft && onSwipingLeft(e, pos.absX);
+	          cancelablePageSwipe = true;
+	        }
+	      } else if (onSwipingRight || onSwipedRight) {
+	        onSwipingRight && onSwipingRight(e, pos.absX);
+	        cancelablePageSwipe = true;
+	      }
+	    } else if (pos.deltaY > 0) {
+	      if (onSwipingUp || onSwipedUp) {
+	        onSwipingUp && onSwipingUp(e, pos.absY);
+	        cancelablePageSwipe = true;
+	      }
+	    } else if (onSwipingDown || onSwipedDown) {
+	      onSwipingDown && onSwipingDown(e, pos.absY);
+	      cancelablePageSwipe = true;
+	    }
+	
+	    this.swipeable.swiping = true;
+	
+	    if (cancelablePageSwipe && preventDefaultTouchmoveEvent) e.preventDefault();
+	  };
+	
+	  Swipeable.prototype.eventEnd = function eventEnd(e) {
+	    var _props2 = this.props,
+	        stopPropagation = _props2.stopPropagation,
+	        flickThreshold = _props2.flickThreshold,
+	        onSwiped = _props2.onSwiped,
+	        onSwipedLeft = _props2.onSwipedLeft,
+	        onSwipedRight = _props2.onSwipedRight,
+	        onSwipedUp = _props2.onSwipedUp,
+	        onSwipedDown = _props2.onSwipedDown,
+	        onTap = _props2.onTap;
+	
+	
+	    if (this.swipeable.swiping) {
+	      var pos = calculatePos(e, this.swipeable);
+	
+	      if (stopPropagation) e.stopPropagation();
+	
+	      var isFlick = pos.velocity > flickThreshold;
+	
+	      onSwiped && onSwiped(e, pos.deltaX, pos.deltaY, isFlick, pos.velocity);
+	
+	      if (pos.absX > pos.absY) {
+	        if (pos.deltaX > 0) {
+	          onSwipedLeft && onSwipedLeft(e, pos.deltaX, isFlick);
+	        } else {
+	          onSwipedRight && onSwipedRight(e, pos.deltaX, isFlick);
+	        }
+	      } else if (pos.deltaY > 0) {
+	        onSwipedUp && onSwipedUp(e, pos.deltaY, isFlick);
+	      } else {
+	        onSwipedDown && onSwipedDown(e, pos.deltaY, isFlick);
+	      }
+	    } else {
+	      onTap && onTap(e);
+	    }
+	
+	    this.swipeable = getInitialState();
+	  };
+	
+	  Swipeable.prototype.elementRef = function elementRef(element) {
+	    this.element = element;
+	    this.props.innerRef && this.props.innerRef(element);
+	  };
+	
+	  Swipeable.prototype.render = function render() {
+	    var newProps = _extends({}, this.props);
+	    if (!this.props.disabled) {
+	      newProps.onTouchStart = this.eventStart;
+	
+	      if (!this.props.preventDefaultTouchmoveEvent || !this.hasPassiveSupport) {
+	        newProps.onTouchMove = this.eventMove;
+	      }
+	
+	      newProps.onTouchEnd = this.eventEnd;
+	      newProps.onMouseDown = this.mouseDown;
+	    }
+	
+	    newProps.ref = this.elementRef;
+	
+	    delete newProps.onSwiped;
+	    delete newProps.onSwiping;
+	    delete newProps.onSwipingUp;
+	    delete newProps.onSwipingRight;
+	    delete newProps.onSwipingDown;
+	    delete newProps.onSwipingLeft;
+	    delete newProps.onSwipedUp;
+	    delete newProps.onSwipedRight;
+	    delete newProps.onSwipedDown;
+	    delete newProps.onSwipedLeft;
+	    delete newProps.onTap;
+	    delete newProps.flickThreshold;
+	    delete newProps.delta;
+	    delete newProps.preventDefaultTouchmoveEvent;
+	    delete newProps.stopPropagation;
+	    delete newProps.nodeName;
+	    delete newProps.children;
+	    delete newProps.trackMouse;
+	    delete newProps.disabled;
+	    delete newProps.innerRef;
+	    delete newProps.rotationAngle;
+	
+	    return React.createElement(this.props.nodeName, newProps, this.props.children);
+	  };
+	
+	  return Swipeable;
+	}(React.Component);
+	
+	Swipeable.propTypes = {
+	  onSwiped: PropTypes.func,
+	  onSwiping: PropTypes.func,
+	  onSwipingUp: PropTypes.func,
+	  onSwipingRight: PropTypes.func,
+	  onSwipingDown: PropTypes.func,
+	  onSwipingLeft: PropTypes.func,
+	  onSwipedUp: PropTypes.func,
+	  onSwipedRight: PropTypes.func,
+	  onSwipedDown: PropTypes.func,
+	  onSwipedLeft: PropTypes.func,
+	  onTap: PropTypes.func,
+	  flickThreshold: PropTypes.number,
+	  delta: PropTypes.number,
+	  preventDefaultTouchmoveEvent: PropTypes.bool,
+	  stopPropagation: PropTypes.bool,
+	  nodeName: PropTypes.string,
+	  trackMouse: PropTypes.bool,
+	  disabled: PropTypes.bool,
+	  innerRef: PropTypes.func,
+	  children: PropTypes.node,
+	  rotationAngle: PropTypes.number
+	};
+	
+	Swipeable.defaultProps = {
+	  flickThreshold: 0.6,
+	  delta: 10,
+	  preventDefaultTouchmoveEvent: false,
+	  stopPropagation: false,
+	  nodeName: 'div',
+	  disabled: false,
+	  rotationAngle: 0
+	};
+	
+	module.exports = Swipeable;
+
+/***/ }),
+/* 283 */
+/*!*******************************!*\
+  !*** ./~/prop-types/index.js ***!
+  \*******************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+	
+	if (process.env.NODE_ENV !== 'production') {
+	  var ReactIs = __webpack_require__(/*! react-is */ 31);
+	
+	  // By explicitly using `prop-types` you are opting into new development behavior.
+	  // http://fb.me/prop-types-in-prod
+	  var throwOnDirectAccess = true;
+	  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ 30)(ReactIs.isElement, throwOnDirectAccess);
+	} else {
+	  // By explicitly using `prop-types` you are opting into new production behavior.
+	  // http://fb.me/prop-types-in-prod
+	  module.exports = __webpack_require__(/*! ./factoryWithThrowingShims */ 284)();
+	}
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../process/browser.js */ 3)))
+
+/***/ }),
+/* 284 */
+/*!**************************************************!*\
+  !*** ./~/prop-types/factoryWithThrowingShims.js ***!
+  \**************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+	
+	'use strict';
+	
+	var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ 34);
+	
+	function emptyFunction() {}
+	function emptyFunctionWithReset() {}
+	emptyFunctionWithReset.resetWarningCache = emptyFunction;
+	
+	module.exports = function() {
+	  function shim(props, propName, componentName, location, propFullName, secret) {
+	    if (secret === ReactPropTypesSecret) {
+	      // It is still safe when called from React.
+	      return;
+	    }
+	    var err = new Error(
+	      'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
+	      'Use PropTypes.checkPropTypes() to call them. ' +
+	      'Read more at http://fb.me/use-check-prop-types'
+	    );
+	    err.name = 'Invariant Violation';
+	    throw err;
+	  };
+	  shim.isRequired = shim;
+	  function getShim() {
+	    return shim;
+	  };
+	  // Important!
+	  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.
+	  var ReactPropTypes = {
+	    array: shim,
+	    bool: shim,
+	    func: shim,
+	    number: shim,
+	    object: shim,
+	    string: shim,
+	    symbol: shim,
+	
+	    any: shim,
+	    arrayOf: getShim,
+	    element: shim,
+	    elementType: shim,
+	    instanceOf: getShim,
+	    node: shim,
+	    objectOf: getShim,
+	    oneOf: getShim,
+	    oneOfType: getShim,
+	    shape: getShim,
+	    exact: getShim,
+	
+	    checkPropTypes: emptyFunctionWithReset,
+	    resetWarningCache: emptyFunction
+	  };
+	
+	  ReactPropTypes.PropTypes = ReactPropTypes;
+	
+	  return ReactPropTypes;
+	};
+
+
+/***/ }),
+/* 285 */
+/*!**********************************************!*\
+  !*** ./~/detect-passive-events/lib/index.js ***!
+  \**********************************************/
+/***/ (function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	// adapted from https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md
+	var detectPassiveEvents = {
+	  update: function update() {
+	    if (typeof window !== 'undefined' && typeof window.addEventListener === 'function') {
+	      var passive = false;
+	      var options = Object.defineProperty({}, 'passive', {
+	        get: function get() {
+	          passive = true;
+	        }
+	      });
+	      // note: have to set and remove a no-op listener instead of null
+	      // (which was used previously), becasue Edge v15 throws an error
+	      // when providing a null callback.
+	      // https://github.com/rafrex/detect-passive-events/pull/3
+	      var noop = function noop() {};
+	      window.addEventListener('testPassiveEventSupport', noop, options);
+	      window.removeEventListener('testPassiveEventSupport', noop, options);
+	      detectPassiveEvents.hasSupport = passive;
+	    }
+	  }
+	};
+	
+	detectPassiveEvents.update();
+	exports.default = detectPassiveEvents;
+
+/***/ }),
+/* 286 */
+/*!***************************************************!*\
+  !*** ./~/react-alice-carousel/lib/utils/index.js ***!
+  \***************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _animation = __webpack_require__(/*! ./animation */ 287);
+	
+	Object.keys(_animation).forEach(function (key) {
+	  if (key === "default" || key === "__esModule") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _animation[key];
+	    }
+	  });
+	});
+	
+	var _common = __webpack_require__(/*! ./common */ 289);
+	
+	Object.keys(_common).forEach(function (key) {
+	  if (key === "default" || key === "__esModule") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _common[key];
+	    }
+	  });
+	});
+	
+	var _debug = __webpack_require__(/*! ./debug */ 292);
+	
+	Object.keys(_debug).forEach(function (key) {
+	  if (key === "default" || key === "__esModule") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _debug[key];
+	    }
+	  });
+	});
+	
+	var _device = __webpack_require__(/*! ./device */ 293);
+	
+	Object.keys(_device).forEach(function (key) {
+	  if (key === "default" || key === "__esModule") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _device[key];
+	    }
+	  });
+	});
+	
+	var _elements = __webpack_require__(/*! ./elements */ 288);
+	
+	Object.keys(_elements).forEach(function (key) {
+	  if (key === "default" || key === "__esModule") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _elements[key];
+	    }
+	  });
+	});
+	
+	var _swipe = __webpack_require__(/*! ./swipe */ 294);
+	
+	Object.keys(_swipe).forEach(function (key) {
+	  if (key === "default" || key === "__esModule") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _swipe[key];
+	    }
+	  });
+	});
+	
+	var _timers = __webpack_require__(/*! ./timers */ 295);
+	
+	Object.keys(_timers).forEach(function (key) {
+	  if (key === "default" || key === "__esModule") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _timers[key];
+	    }
+	  });
+	});
+	
+	var _math = __webpack_require__(/*! ./math */ 291);
+	
+	Object.keys(_math).forEach(function (key) {
+	  if (key === "default" || key === "__esModule") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _math[key];
+	    }
+	  });
+	});
+	
+	var _style = __webpack_require__(/*! ./style */ 290);
+	
+	Object.keys(_style).forEach(function (key) {
+	  if (key === "default" || key === "__esModule") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _style[key];
+	    }
+	  });
+	});
+	
+	var _classnames = __webpack_require__(/*! ./classnames */ 296);
+	
+	Object.keys(_classnames).forEach(function (key) {
+	  if (key === "default" || key === "__esModule") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _classnames[key];
+	    }
+	  });
+	});
+
+/***/ }),
+/* 287 */
+/*!*******************************************************!*\
+  !*** ./~/react-alice-carousel/lib/utils/animation.js ***!
+  \*******************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.isFadeOutAnimationAllowed = exports.isAnimatedItem = exports.getTranslate3dPosition = undefined;
+	exports.animate = animate;
+	exports.getTranslateX = getTranslateX;
+	exports.getTransformMatrix = getTransformMatrix;
+	
+	var _elements = __webpack_require__(/*! ./elements */ 288);
+	
+	function animate(element) {
+	  var position = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+	  var durationMs = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+	
+	  if ((0, _elements.isElement)(element)) {
+	    element.style['transition'] = 'transform ' + durationMs + 'ms ease-out';
+	    element.style['transform'] = 'translate3d(' + position + 'px, 0, 0)';
+	  }
+	  return element;
+	}
+	
+	function getTranslateX(element) {
+	  var translateXIndex = 4;
+	  var matrix = getTransformMatrix(element);
+	  return matrix[translateXIndex] || '';
+	}
+	
+	function getTransformMatrix(element) {
+	  if ((0, _elements.isElement)(element)) {
+	    var _ref = getComputedStyle(element) || {},
+	        _ref$transform = _ref.transform,
+	        transform = _ref$transform === undefined ? '' : _ref$transform;
+	
+	    var matched = transform.match(/[0-9., -]+/) || [];
+	    if (typeof matched[0] === 'string') {
+	      return matched[0].split(',');
+	    }
+	  }
+	  return [];
+	}
+	
+	var getTranslate3dPosition = exports.getTranslate3dPosition = function getTranslate3dPosition() {
+	  var currentIndex = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+	  var state = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	  var itemWidth = state.itemWidth,
+	      items = state.items,
+	      infinite = state.infinite,
+	      _state$stagePadding = state.stagePadding,
+	      stagePadding = _state$stagePadding === undefined ? {} : _state$stagePadding;
+	
+	
+	  if (infinite) {
+	    var paddingLeft = stagePadding.paddingLeft,
+	        paddingRight = stagePadding.paddingRight;
+	
+	    if (paddingLeft || paddingRight) {
+	      currentIndex += 1;
+	    }
+	  }
+	
+	  return (items + currentIndex) * -itemWidth || 0;
+	};
+	
+	var isAnimatedItem = exports.isAnimatedItem = function isAnimatedItem() {
+	  var i = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+	  var animationProps = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	  var allowFadeOutAnimation = animationProps.allowFadeOutAnimation,
+	      fadeOutIndex = animationProps.fadeOutIndex;
+	
+	  return !!allowFadeOutAnimation && fadeOutIndex === i;
+	};
+	
+	var isFadeOutAnimationAllowed = exports.isFadeOutAnimationAllowed = function isFadeOutAnimationAllowed() {
+	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+	  var props = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	  var stagePadding = state.stagePadding,
+	      items = state.items;
+	
+	  var hasNoStagePadding = !(stagePadding.paddingLeft || stagePadding.paddingRight);
+	
+	  return props.fadeOutAnimation && items === 1 && hasNoStagePadding;
+	};
+
+/***/ }),
+/* 288 */
+/*!******************************************************!*\
+  !*** ./~/react-alice-carousel/lib/utils/elements.js ***!
+  \******************************************************/
+/***/ (function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var cloneCarouselItems = exports.cloneCarouselItems = function cloneCarouselItems() {
+	  var children = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+	  var itemsInSlide = arguments[1];
+	  var props = arguments[2];
+	
+	  var items = itemsInSlide || 1;
+	
+	  var _ref = props || {},
+	      stagePadding = _ref.stagePadding,
+	      infinite = _ref.infinite;
+	
+	  var _ref2 = stagePadding || {},
+	      paddingLeft = _ref2.paddingLeft,
+	      paddingRight = _ref2.paddingRight;
+	
+	  if (items > children.length) {
+	    items = children.length;
+	  }
+	
+	  if (infinite) {
+	    if (paddingLeft || paddingRight) {
+	      if (itemsInSlide < children.length) {
+	        items = itemsInSlide + 1;
+	      } else {
+	        var lastElement = children.slice(-1);
+	        var firstElement = children.slice(0, 1);
+	        var _clonesBefore = lastElement.concat(children);
+	        var _clonesAfter = children.concat(firstElement);
+	
+	        return [].concat(_clonesBefore, children, _clonesAfter);
+	      }
+	    }
+	  }
+	
+	  var clonesAfter = children.slice(0, items);
+	  var clonesBefore = children.slice(children.length - items);
+	
+	  return [].concat(clonesBefore, children, clonesAfter);
+	};
+	
+	var getElementWidth = exports.getElementWidth = function getElementWidth(element) {
+	  if (element && element.getBoundingClientRect) {
+	    return element.getBoundingClientRect().width;
+	  }
+	};
+	
+	var getSlides = exports.getSlides = function getSlides(props) {
+	  var _ref3 = props || {},
+	      children = _ref3.children,
+	      _ref3$items = _ref3.items,
+	      items = _ref3$items === undefined ? [] : _ref3$items;
+	
+	  return children && children.length ? children : items;
+	};
+	
+	var itemInfo = exports.itemInfo = function itemInfo(props) {
+	  var _ref4 = props || {},
+	      items = _ref4.items,
+	      currentIndex = _ref4.currentIndex,
+	      infinite = _ref4.infinite,
+	      _ref4$slides = _ref4.slides,
+	      slides = _ref4$slides === undefined ? [] : _ref4$slides;
+	
+	  var isPrevSlideDisabled = infinite === false && currentIndex === 0;
+	  var isNextSlideDisabled = infinite === false && slides.length - items === currentIndex;
+	
+	  return { isPrevSlideDisabled: isPrevSlideDisabled, isNextSlideDisabled: isNextSlideDisabled };
+	};
+	
+	var getStagePadding = exports.getStagePadding = function getStagePadding(props) {
+	  var _ref5 = props || {},
+	      _ref5$stagePadding = _ref5.stagePadding,
+	      stagePadding = _ref5$stagePadding === undefined ? {} : _ref5$stagePadding;
+	
+	  var paddingLeft = Math.abs(stagePadding.paddingLeft) || 0;
+	  var paddingRight = Math.abs(stagePadding.paddingRight) || 0;
+	
+	  return { paddingLeft: paddingLeft, paddingRight: paddingRight };
+	};
+	
+	var getItemWidth = exports.getItemWidth = function getItemWidth() {
+	  var galleryWidth = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+	  var totalItems = arguments[1];
+	
+	  var width = Number(galleryWidth);
+	  var items = Number(totalItems);
+	  return width && items > 0 ? width / items : 0;
+	};
+	
+	var getNextItem = exports.getNextItem = function getNextItem(stageComponent, itemIndex) {
+	  var children = stageComponent && stageComponent.children || [];
+	  return children[itemIndex] && children[itemIndex].firstChild || null;
+	};
+	
+	var getGalleryItemHeight = exports.getGalleryItemHeight = function getGalleryItemHeight(stageComponent, itemIndex) {
+	  var element = getNextItem(stageComponent, itemIndex);
+	
+	  if (isElement(element)) {
+	    var styles = getComputedStyle(element);
+	    var marginTop = parseFloat(styles['marginTop']);
+	    var marginBottom = parseFloat(styles['marginBottom']);
+	
+	    return Math.ceil(element.offsetHeight + marginTop + marginBottom);
+	  }
+	};
+	
+	var getSlideInfo = exports.getSlideInfo = function getSlideInfo() {
+	  var currentIndex = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+	  var slidesLength = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+	
+	  var slideIndex = currentIndex + 1;
+	
+	  if (slideIndex < 1) {
+	    slideIndex = slidesLength;
+	  } else if (slideIndex > slidesLength) {
+	    slideIndex = 1;
+	  }
+	
+	  return { slideIndex: slideIndex, slidesLength: slidesLength };
+	};
+	
+	var isElement = exports.isElement = function isElement(element) {
+	  return element instanceof Element || element instanceof HTMLDocument;
+	};
+	
+	var getNextItemIndexBeforeTouchEnd = exports.getNextItemIndexBeforeTouchEnd = function getNextItemIndexBeforeTouchEnd(currentTranslateXPosition) {
+	  var props = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	  var infinite = props.infinite,
+	      _props$items = props.items,
+	      items = _props$items === undefined ? 1 : _props$items,
+	      _props$itemWidth = props.itemWidth,
+	      itemWidth = _props$itemWidth === undefined ? 0 : _props$itemWidth,
+	      _props$slides = props.slides,
+	      slides = _props$slides === undefined ? [] : _props$slides,
+	      _props$stagePadding = props.stagePadding,
+	      stagePadding = _props$stagePadding === undefined ? {} : _props$stagePadding;
+	  var paddingLeft = stagePadding.paddingLeft,
+	      paddingRight = stagePadding.paddingRight;
+	
+	
+	  if (itemWidth <= 0 || items > slides.length) {
+	    return 0;
+	  }
+	
+	  var currentIndex = getCurrentIndex(currentTranslateXPosition, itemWidth, items);
+	
+	  if (infinite && (paddingLeft || paddingRight)) {
+	    currentIndex -= 1;
+	  }
+	
+	  if (currentIndex === slides.length) {
+	    return 0;
+	  }
+	
+	  if (currentIndex < 0) {
+	    return slides.length + currentIndex;
+	  }
+	
+	  return currentIndex;
+	};
+	
+	var getCurrentIndex = exports.getCurrentIndex = function getCurrentIndex(currentTranslateXPosition, itemWidth, items) {
+	  var value = Math.abs(currentTranslateXPosition / itemWidth);
+	  return Math.ceil(value) - items;
+	};
+
+/***/ }),
+/* 289 */
+/*!****************************************************!*\
+  !*** ./~/react-alice-carousel/lib/utils/common.js ***!
+  \****************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.calculateInitialProps = exports.setTotalItemsInSlide = undefined;
+	
+	var _elements = __webpack_require__(/*! ./elements */ 288);
+	
+	var _animation = __webpack_require__(/*! ./animation */ 287);
+	
+	var _style = __webpack_require__(/*! ./style */ 290);
+	
+	var _math = __webpack_require__(/*! ./math */ 291);
+	
+	var setTotalItemsInSlide = exports.setTotalItemsInSlide = function setTotalItemsInSlide(responsiveConfig, childrenLength) {
+	  var items = 1;
+	  if (responsiveConfig) {
+	    var configKeys = Object.keys(responsiveConfig);
+	
+	    if (configKeys.length) {
+	      configKeys.forEach(function (width) {
+	        if (width < window.innerWidth) {
+	          items = Math.min(responsiveConfig[width].items, childrenLength) || items;
+	        }
+	      });
+	    }
+	  }
+	  return items;
+	};
+	
+	var calculateInitialProps = exports.calculateInitialProps = function calculateInitialProps(props, rootComponent) {
+	  var startIndex = props.startIndex,
+	      responsive = props.responsive,
+	      infinite = props.infinite;
+	
+	  var style = (0, _style.getDefaultStyle)();
+	  var slides = (0, _elements.getSlides)(props);
+	  var stagePadding = (0, _elements.getStagePadding)(props);
+	  var items = setTotalItemsInSlide(responsive, slides.length);
+	  var currentIndex = (0, _math.setStartIndex)(slides.length, startIndex);
+	  var galleryWidth = (0, _elements.getElementWidth)(rootComponent);
+	  var itemWidth = (0, _elements.getItemWidth)(galleryWidth, items);
+	  var clones = (0, _elements.cloneCarouselItems)(slides, items, { stagePadding: stagePadding, infinite: infinite });
+	  var translate3d = (0, _animation.getTranslate3dPosition)(currentIndex, { itemWidth: itemWidth, items: items, stagePadding: stagePadding, infinite: infinite });
+	
+	  return {
+	    items: items,
+	    itemWidth: itemWidth,
+	    currentIndex: currentIndex,
+	    slides: slides,
+	    clones: clones,
+	    infinite: infinite,
+	    translate3d: translate3d,
+	    stagePadding: stagePadding,
+	    style: style
+	  };
+	};
+
+/***/ }),
+/* 290 */
+/*!***************************************************!*\
+  !*** ./~/react-alice-carousel/lib/utils/style.js ***!
+  \***************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.wrapperStyle = exports.stageStyle = exports.getDefaultStyle = exports.itemStyles = exports.intermediateTransitionProps = undefined;
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _animation = __webpack_require__(/*! ./animation */ 287);
+	
+	var intermediateTransitionProps = exports.intermediateTransitionProps = function intermediateTransitionProps(condition, duration) {
+	  return condition ? { fadeoutAnimationProcessing: true, style: { transition: 'transform 0ms ease-out' } } : { style: { transition: 'transform ' + duration + 'ms ease-out' } };
+	};
+	
+	var itemStyles = exports.itemStyles = function itemStyles(i, state, animationProps) {
+	  var fadeOutOffset = animationProps.fadeOutOffset;
+	  var itemWidth = state.itemWidth,
+	      duration = state.duration;
+	
+	
+	  return (0, _animation.isAnimatedItem)(i, animationProps) ? { transform: 'translateX(' + fadeOutOffset + 'px)', animationDuration: duration + 'ms', width: itemWidth + 'px' } : { width: itemWidth + 'px' };
+	};
+	
+	var getDefaultStyle = exports.getDefaultStyle = function getDefaultStyle() {
+	  return { transition: 'transform 0ms ease-out' };
+	};
+	
+	var stageStyle = exports.stageStyle = function stageStyle() {
+	  var currentStyles = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+	  var nextStyles = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	  var _nextStyles$translate = nextStyles.translate3d,
+	      translate3d = _nextStyles$translate === undefined ? 0 : _nextStyles$translate,
+	      height = nextStyles.height;
+	
+	  var transform = 'translate3d(' + translate3d + 'px, 0, 0)';
+	
+	  return _extends({}, currentStyles, { transform: transform, height: height });
+	};
+	
+	var wrapperStyle = exports.wrapperStyle = function wrapperStyle(_ref) {
+	  var paddingLeft = _ref.paddingLeft,
+	      paddingRight = _ref.paddingRight;
+	
+	  return { paddingLeft: paddingLeft + 'px', paddingRight: paddingRight + 'px' };
+	};
+
+/***/ }),
+/* 291 */
+/*!**************************************************!*\
+  !*** ./~/react-alice-carousel/lib/utils/math.js ***!
+  \**************************************************/
+/***/ (function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var getDotsLength = exports.getDotsLength = function getDotsLength(slidesLength, items) {
+	  if (slidesLength && items) {
+	    var dots = Math.floor(slidesLength / items);
+	    return slidesLength % items === 0 ? dots - 1 : dots;
+	  }
+	  return 0;
+	};
+	
+	var getActiveSlideIndex = exports.getActiveSlideIndex = function getActiveSlideIndex(isNextSlideDisabled) {
+	  var props = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	  var index = props.currentIndex,
+	      items = props.items,
+	      _props$slides = props.slides,
+	      slides = _props$slides === undefined ? [] : _props$slides;
+	
+	  var currentIndex = index + items;
+	  var slidesLength = slides.length;
+	
+	  return items === 1 ? getSlideIndexForNotMultipleItems(currentIndex, items, slidesLength) : getSlideIndexForMultipleItems(currentIndex, items, slidesLength, isNextSlideDisabled);
+	};
+	
+	var getSlideIndexForNotMultipleItems = exports.getSlideIndexForNotMultipleItems = function getSlideIndexForNotMultipleItems(currentIndex, items, slidesLength) {
+	  if (currentIndex < items) return slidesLength - items;
+	  if (currentIndex > slidesLength) return 0;
+	  return currentIndex - 1;
+	};
+	
+	var getSlideIndexForMultipleItems = exports.getSlideIndexForMultipleItems = function getSlideIndexForMultipleItems(currentIndex, items, slidesLength, isNextSlideDisabled) {
+	  var dotsLength = getDotsLength(slidesLength, items);
+	
+	  if (currentIndex === slidesLength + items) return 0;
+	  if (isNextSlideDisabled || currentIndex < items && currentIndex !== 0) return dotsLength;
+	  if (currentIndex === 0) {
+	    return slidesLength % items === 0 ? dotsLength : dotsLength - 1;
+	  }
+	
+	  return items > 0 ? Math.floor(currentIndex / items) - 1 : 0;
+	};
+	
+	var setStartIndex = exports.setStartIndex = function setStartIndex(childrenLength, index) {
+	  var startIndex = index ? Math.abs(Math.ceil(index)) : 0;
+	  return Math.min(startIndex, childrenLength - 1) || 0;
+	};
+	
+	var getFadeOutOffsetOnDotClick = exports.getFadeOutOffsetOnDotClick = function getFadeOutOffsetOnDotClick(itemIndex, currentIndex, itemWidth) {
+	  if (itemIndex < currentIndex) {
+	    return (currentIndex - itemIndex) * -itemWidth || 0;
+	  } else {
+	    return (itemIndex - currentIndex) * itemWidth || 0;
+	  }
+	};
+	
+	var getFadeOutIndexOnClick = exports.getFadeOutIndexOnClick = function getFadeOutIndexOnClick(currentIndex) {
+	  return currentIndex === 0 ? 1 : currentIndex + 1;
+	};
+	
+	var getFadeOutOffsetOnClick = exports.getFadeOutOffsetOnClick = function getFadeOutOffsetOnClick(direction, itemWidth) {
+	  return direction === 'next' ? itemWidth : -itemWidth;
+	};
+	
+	var getMaxSwipePosition = exports.getMaxSwipePosition = function getMaxSwipePosition(items, itemWidth, slidesLength) {
+	  return (slidesLength + items) * itemWidth || 0;
+	};
+	
+	var getMinSwipePosition = exports.getMinSwipePosition = function getMinSwipePosition(items, itemWidth) {
+	  return items * itemWidth || 0;
+	};
+	
+	var recalculatePositionOnBeforeTouchEnd = exports.recalculatePositionOnBeforeTouchEnd = function recalculatePositionOnBeforeTouchEnd(items, itemWidth) {
+	  return -getMinSwipePosition(items, itemWidth);
+	};
+	
+	var recalculateCurrentIndexOnBeforeTouchEnd = exports.recalculateCurrentIndexOnBeforeTouchEnd = function recalculateCurrentIndexOnBeforeTouchEnd(slidesLength, items) {
+	  return slidesLength - items || 0;
+	};
+	
+	var getMinSwipeLimit = exports.getMinSwipeLimit = function getMinSwipeLimit(minSwipePosition) {
+	  var stagePadding = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	  var _stagePadding$padding = stagePadding.paddingLeft,
+	      paddingLeft = _stagePadding$padding === undefined ? 0 : _stagePadding$padding;
+	
+	  return paddingLeft ? minSwipePosition + paddingLeft : 0;
+	};
+	
+	var getMaxSwipeLimit = exports.getMaxSwipeLimit = function getMaxSwipeLimit(maxSwipePosition) {
+	  var stagePadding = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	  var _stagePadding$padding2 = stagePadding.paddingRight,
+	      paddingRight = _stagePadding$padding2 === undefined ? 0 : _stagePadding$padding2;
+	
+	  var limit = paddingRight ? maxSwipePosition + paddingRight : maxSwipePosition;
+	  return limit || 0;
+	};
+	
+	var getSlideOffset = exports.getSlideOffset = function getSlideOffset(itemWidth) {
+	  var offset = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 250;
+	
+	  return Math.min(itemWidth / 2, offset) || 0;
+	};
+	
+	var getMinSwipeLimitIfNotInfinite = exports.getMinSwipeLimitIfNotInfinite = function getMinSwipeLimitIfNotInfinite(items, itemWidth) {
+	  return items * itemWidth - getSlideOffset(itemWidth) || 0;
+	};
+	
+	var shouldRecalculateSwipePosition = exports.shouldRecalculateSwipePosition = function shouldRecalculateSwipePosition(currentPosition, minPosition, maxPosition) {
+	  return currentPosition >= 0 - minPosition || Math.abs(currentPosition) >= maxPosition;
+	};
+	
+	var getMaxSwipeLimitIfNotInfinite = exports.getMaxSwipeLimitIfNotInfinite = function getMaxSwipeLimitIfNotInfinite(slidesLength, itemWidth) {
+	  return slidesLength * itemWidth + getSlideOffset(itemWidth) || 0;
+	};
+	
+	var getDotsNavigationLength = exports.getDotsNavigationLength = function getDotsNavigationLength(slidesLength, items) {
+	  if (Number(items) !== 0) {
+	    return Math.ceil(slidesLength / items) || 0;
+	  }
+	  return 0;
+	};
+	
+	var getItemIndexForDotNavigation = exports.getItemIndexForDotNavigation = function getItemIndexForDotNavigation(index, isTheLastIndex, slidesLength, itemsLength) {
+	  if (isTheLastIndex) {
+	    return slidesLength - itemsLength;
+	  }
+	  return index * itemsLength;
+	};
+	
+	var isTheLastDotIndex = exports.isTheLastDotIndex = function isTheLastDotIndex(index, infinite, dotsLength) {
+	  return infinite === false && index === dotsLength - 1;
+	};
+	
+	var recalculateCurrentSlideIndex = exports.recalculateCurrentSlideIndex = function recalculateCurrentSlideIndex() {
+	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+	  var currentIndex = state.currentIndex,
+	      _state$slides = state.slides,
+	      slides = _state$slides === undefined ? [] : _state$slides;
+	
+	  return currentIndex < 0 ? slides.length - 1 : 0;
+	};
+	
+	var recalculateTranslatePosition = exports.recalculateTranslatePosition = function recalculateTranslatePosition() {
+	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+	  var items = state.items,
+	      itemWidth = state.itemWidth,
+	      _state$stagePadding = state.stagePadding,
+	      stagePadding = _state$stagePadding === undefined ? {} : _state$stagePadding,
+	      _state$slides2 = state.slides,
+	      slides = _state$slides2 === undefined ? [] : _state$slides2;
+	
+	  var maxSlidePosition = slides.length - 1;
+	
+	  var currentIndex = state.currentIndex < 0 ? maxSlidePosition : 0;
+	  var nextIndex = currentIndex === 0 ? items : maxSlidePosition + items;
+	
+	  if (stagePadding.paddingLeft || stagePadding.paddingRight) {
+	    return (nextIndex + 1) * -itemWidth || 0;
+	  }
+	  return nextIndex * -itemWidth || 0;
+	};
+
+/***/ }),
+/* 292 */
+/*!***************************************************!*\
+  !*** ./~/react-alice-carousel/lib/utils/debug.js ***!
+  \***************************************************/
+/***/ (function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.debug = debug;
+	function debug() {
+	  if (window.__DEBUG__) {
+	    var _console;
+	
+	    (_console = console).debug.apply(_console, arguments); 
+	    return arguments;
+	  }
+	}
+
+/***/ }),
+/* 293 */
+/*!****************************************************!*\
+  !*** ./~/react-alice-carousel/lib/utils/device.js ***!
+  \****************************************************/
+/***/ (function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.deviceInfo = deviceInfo;
+	exports.shouldCallHandlerOnWindowResize = shouldCallHandlerOnWindowResize;
+	function deviceInfo() {
+	  return {
+	    width: window.innerWidth,
+	    height: window.innerHeight
+	  };
+	}
+	
+	function shouldCallHandlerOnWindowResize() {
+	  var prevDimensions = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+	
+	  var _deviceInfo = deviceInfo(),
+	      width = _deviceInfo.width,
+	      height = _deviceInfo.height;
+	
+	  return prevDimensions.width !== width || prevDimensions.height !== height;
+	}
+
+/***/ }),
+/* 294 */
+/*!***************************************************!*\
+  !*** ./~/react-alice-carousel/lib/utils/swipe.js ***!
+  \***************************************************/
+/***/ (function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var isVerticalTouchMoveDetected = exports.isVerticalTouchMoveDetected = function isVerticalTouchMoveDetected(e, deltaX, deltaY) {
+	  var gap = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 32;
+	
+	  var vertical = Math.abs(deltaY);
+	  var horizontal = Math.abs(deltaX);
+	  return vertical > horizontal && horizontal < gap;
+	};
+	
+	var calculateSwipeIndex = exports.calculateSwipeIndex = function calculateSwipeIndex(itemWidth, position, direction) {
+	  var index = getSwipeIndex(position, itemWidth);
+	  var offset = getSwipeOffset(direction);
+	  return index + offset;
+	};
+	
+	var getSwipeDirection = exports.getSwipeDirection = function getSwipeDirection(deltaX) {
+	  return deltaX > 0 ? 'LEFT' : 'RIGHT';
+	};
+	
+	var getSwipeOffset = exports.getSwipeOffset = function getSwipeOffset(direction) {
+	  return direction === 'LEFT' ? 1 : 0;
+	};
+	
+	var getSwipeIndex = exports.getSwipeIndex = function getSwipeIndex(position, itemWidth) {
+	  var swipePosition = Math.abs(position);
+	  return Math.floor(swipePosition / itemWidth);
+	};
+	
+	var getSwipeIndexOnBeforeTouchEnd = exports.getSwipeIndexOnBeforeTouchEnd = function getSwipeIndexOnBeforeTouchEnd(swipeIndex, items) {
+	  return swipeIndex - items || 0;
+	};
+	
+	var getSwipePositionOnBeforeTouchEnd = exports.getSwipePositionOnBeforeTouchEnd = function getSwipePositionOnBeforeTouchEnd(swipeIndex, itemWidth) {
+	  return swipeIndex * -itemWidth || 0;
+	};
+
+/***/ }),
+/* 295 */
+/*!****************************************************!*\
+  !*** ./~/react-alice-carousel/lib/utils/timers.js ***!
+  \****************************************************/
+/***/ (function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.debounce = debounce;
+	function debounce(func) {
+	  var ms = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+	
+	  var timer = null;
+	
+	  return function () {
+	    var _this = this;
+	
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+	
+	    if (timer) {
+	      clearTimeout(timer);
+	    }
+	
+	    timer = setTimeout(function () {
+	      func.apply(_this, args);
+	      timer = null;
+	    }, ms);
+	  };
+	}
+
+/***/ }),
+/* 296 */
+/*!********************************************************!*\
+  !*** ./~/react-alice-carousel/lib/utils/classnames.js ***!
+  \********************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.itemClassName = exports.isClonedItem = exports.isActiveItem = undefined;
+	
+	var _animation = __webpack_require__(/*! ./animation */ 287);
+	
+	var isActiveItem = exports.isActiveItem = function isActiveItem() {
+	  var i = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+	  var state = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	  var currentIndex = state.currentIndex,
+	      items = state.items,
+	      _state$stagePadding = state.stagePadding,
+	      stagePadding = _state$stagePadding === undefined ? {} : _state$stagePadding;
+	
+	  if (stagePadding.paddingLeft || stagePadding.paddingRight) {
+	    currentIndex += 1;
+	  }
+	  return currentIndex + items === i;
+	};
+	
+	var isClonedItem = exports.isClonedItem = function isClonedItem() {
+	  var i = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+	  var state = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	  var infinite = state.infinite,
+	      items = state.items,
+	      _state$slides = state.slides,
+	      slides = _state$slides === undefined ? [] : _state$slides;
+	
+	  return infinite === false && (i < items || i > slides.length + items - 1);
+	};
+	
+	var itemClassName = exports.itemClassName = function itemClassName() {
+	  var i = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+	  var state = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	  var animationProps = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+	
+	  var isActive = isActiveItem(i, state) ? ' __active' : '';
+	  var isCloned = isClonedItem(i, state) ? ' __cloned' : '';
+	  var isAnimated = (0, _animation.isAnimatedItem)(i, animationProps) ? ' animated animated-out fadeOut' : '';
+	
+	  return 'alice-carousel__stage-item' + isActive + isCloned + isAnimated;
+	};
+
+/***/ }),
+/* 297 */
+/*!***************************************************!*\
+  !*** ./~/react-alice-carousel/lib/views/index.js ***!
+  \***************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _SlideInfo = __webpack_require__(/*! ./SlideInfo */ 298);
+	
+	Object.keys(_SlideInfo).forEach(function (key) {
+	  if (key === "default" || key === "__esModule") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _SlideInfo[key];
+	    }
+	  });
+	});
+	
+	var _StageItem = __webpack_require__(/*! ./StageItem */ 299);
+	
+	Object.keys(_StageItem).forEach(function (key) {
+	  if (key === "default" || key === "__esModule") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _StageItem[key];
+	    }
+	  });
+	});
+	
+	var _DotsNavigation = __webpack_require__(/*! ./DotsNavigation */ 300);
+	
+	Object.keys(_DotsNavigation).forEach(function (key) {
+	  if (key === "default" || key === "__esModule") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _DotsNavigation[key];
+	    }
+	  });
+	});
+	
+	var _PlayPauseButton = __webpack_require__(/*! ./PlayPauseButton */ 301);
+	
+	Object.keys(_PlayPauseButton).forEach(function (key) {
+	  if (key === "default" || key === "__esModule") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _PlayPauseButton[key];
+	    }
+	  });
+	});
+	
+	var _PrevNextButton = __webpack_require__(/*! ./PrevNextButton */ 302);
+	
+	Object.keys(_PrevNextButton).forEach(function (key) {
+	  if (key === "default" || key === "__esModule") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _PrevNextButton[key];
+	    }
+	  });
+	});
+
+/***/ }),
+/* 298 */
+/*!*******************************************************!*\
+  !*** ./~/react-alice-carousel/lib/views/SlideInfo.js ***!
+  \*******************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.SlideInfo = undefined;
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _propTypes = __webpack_require__(/*! prop-types */ 283);
+	
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+	
+	var _utils = __webpack_require__(/*! ../utils */ 286);
+	
+	var Utils = _interopRequireWildcard(_utils);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var SlideInfo = exports.SlideInfo = function SlideInfo(_ref) {
+	  var currentIndex = _ref.currentIndex,
+	      slidesLength = _ref.slidesLength;
+	
+	  var info = Utils.getSlideInfo(currentIndex, slidesLength);
+	
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'alice-carousel__slide-info' },
+	    _react2.default.createElement(
+	      'span',
+	      { className: 'alice-carousel__slide-info-item' },
+	      info.slideIndex
+	    ),
+	    _react2.default.createElement(
+	      'span',
+	      { className: 'alice-carousel__slide-info-item alice-carousel__slide-info-item--separator' },
+	      '/'
+	    ),
+	    _react2.default.createElement(
+	      'span',
+	      { className: 'alice-carousel__slide-info-item' },
+	      info.slidesLength
+	    )
+	  );
+	};
+	
+	SlideInfo.propTypes = {
+	  currentIndex: _propTypes2.default.number.isRequired,
+	  slidesLength: _propTypes2.default.number.isRequired
+	};
+
+/***/ }),
+/* 299 */
+/*!*******************************************************!*\
+  !*** ./~/react-alice-carousel/lib/views/StageItem.js ***!
+  \*******************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.StageItem = undefined;
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _propTypes = __webpack_require__(/*! prop-types */ 283);
+	
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var StageItem = exports.StageItem = function StageItem(_ref) {
+	  var item = _ref.item,
+	      className = _ref.className,
+	      styles = _ref.styles;
+	
+	  return _react2.default.createElement(
+	    'li',
+	    { style: styles, className: className },
+	    item
+	  );
+	};
+	
+	StageItem.propTypes = {
+	  item: _propTypes2.default.node,
+	  className: _propTypes2.default.string.isRequired,
+	  styles: _propTypes2.default.object.isRequired
+	};
+
+/***/ }),
+/* 300 */
+/*!************************************************************!*\
+  !*** ./~/react-alice-carousel/lib/views/DotsNavigation.js ***!
+  \************************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.DotsNavigation = undefined;
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _propTypes = __webpack_require__(/*! prop-types */ 283);
+	
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+	
+	var _utils = __webpack_require__(/*! ../utils */ 286);
+	
+	var Utils = _interopRequireWildcard(_utils);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var DotsNavigation = exports.DotsNavigation = function DotsNavigation(_ref) {
+	  var state = _ref.state,
+	      _onClick = _ref.onClick,
+	      onMouseEnter = _ref.onMouseEnter,
+	      onMouseLeave = _ref.onMouseLeave;
+	  var slides = state.slides,
+	      items = state.items,
+	      infinite = state.infinite;
+	
+	  var _Utils$itemInfo = Utils.itemInfo(state),
+	      isNextSlideDisabled = _Utils$itemInfo.isNextSlideDisabled;
+	
+	  var dotsLength = Utils.getDotsNavigationLength(slides.length, items);
+	
+	  return _react2.default.createElement(
+	    'ul',
+	    { className: 'alice-carousel__dots' },
+	    slides.map(function (item, i) {
+	      if (i < dotsLength) {
+	        var isTheLastDotIndex = Utils.isTheLastDotIndex(i, infinite, dotsLength);
+	        var itemIndex = Utils.getItemIndexForDotNavigation(i, isTheLastDotIndex, slides.length, items);
+	        var activeIndex = Utils.getActiveSlideIndex(isNextSlideDisabled, state);
+	        var className = activeIndex === i ? ' __active' : '';
+	
+	        return _react2.default.createElement('li', {
+	          key: 'dot-item-' + i,
+	          onClick: function onClick() {
+	            return _onClick(itemIndex);
+	          },
+	          onMouseEnter: onMouseEnter,
+	          onMouseLeave: onMouseLeave,
+	          className: 'alice-carousel__dots-item' + className
+	        });
+	      }
+	    })
+	  );
+	};
+	
+	DotsNavigation.propTypes = {
+	  state: _propTypes2.default.object.isRequired,
+	  onClick: _propTypes2.default.func.isRequired,
+	  onMouseEnter: _propTypes2.default.func.isRequired,
+	  onMouseLeave: _propTypes2.default.func.isRequired
+	};
+
+/***/ }),
+/* 301 */
+/*!*************************************************************!*\
+  !*** ./~/react-alice-carousel/lib/views/PlayPauseButton.js ***!
+  \*************************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.PlayPauseButton = undefined;
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _propTypes = __webpack_require__(/*! prop-types */ 283);
+	
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var PlayPauseButton = exports.PlayPauseButton = function PlayPauseButton(_ref) {
+	  var isPlaying = _ref.isPlaying,
+	      onClick = _ref.onClick;
+	
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'alice-carousel__play-btn' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'alice-carousel__play-btn-wrapper' },
+	      _react2.default.createElement('div', { onClick: onClick, className: 'alice-carousel__play-btn-item' + (isPlaying ? ' __pause' : '') })
+	    )
+	  );
+	};
+	
+	PlayPauseButton.propTypes = {
+	  isPlaying: _propTypes2.default.bool,
+	  onClick: _propTypes2.default.func
+	};
+
+/***/ }),
+/* 302 */
+/*!************************************************************!*\
+  !*** ./~/react-alice-carousel/lib/views/PrevNextButton.js ***!
+  \************************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.PrevNextButton = undefined;
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _propTypes = __webpack_require__(/*! prop-types */ 283);
+	
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var PrevNextButton = exports.PrevNextButton = function PrevNextButton(_ref) {
+	  var name = _ref.name,
+	      disabled = _ref.disabled,
+	      onClick = _ref.onClick,
+	      onMouseEnter = _ref.onMouseEnter,
+	      onMouseLeave = _ref.onMouseLeave;
+	
+	  var className = 'alice-carousel__' + name + '-btn-item' + (disabled ? ' __inactive' : '');
+	
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'alice-carousel__' + name + '-btn' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'alice-carousel__' + name + '-btn-wrapper', onMouseEnter: onMouseEnter, onMouseLeave: onMouseLeave },
+	      _react2.default.createElement(
+	        'p',
+	        { className: className, onClick: onClick },
+	        _react2.default.createElement('span', { 'data-area': name })
+	      )
+	    )
+	  );
+	};
+	
+	PrevNextButton.propTypes = {
+	  name: _propTypes2.default.oneOf(['next', 'prev']),
+	  disabled: _propTypes2.default.bool.isRequired,
+	  onClick: _propTypes2.default.func.isRequired,
+	  onMouseEnter: _propTypes2.default.func.isRequired,
+	  onMouseLeave: _propTypes2.default.func.isRequired
+	};
+
+/***/ }),
+/* 303 */
+/*!**************************************************!*\
+  !*** ./~/react-alice-carousel/lib/prop-types.js ***!
+  \**************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.defaultProps = exports.propTypes = undefined;
+	
+	var _propTypes = __webpack_require__(/*! prop-types */ 283);
+	
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var propTypes = exports.propTypes = {
+	  items: _propTypes2.default.array,
+	  children: _propTypes2.default.array,
+	  onSlideChange: _propTypes2.default.func,
+	  onSlideChanged: _propTypes2.default.func,
+	  onInitialized: _propTypes2.default.func,
+	  onResized: _propTypes2.default.func,
+	  keysControlDisabled: _propTypes2.default.bool,
+	  playButtonEnabled: _propTypes2.default.bool,
+	  buttonsDisabled: _propTypes2.default.bool,
+	  dotsDisabled: _propTypes2.default.bool,
+	  swipeDisabled: _propTypes2.default.bool,
+	  responsive: _propTypes2.default.object,
+	  stagePadding: _propTypes2.default.object,
+	  duration: _propTypes2.default.number,
+	  startIndex: _propTypes2.default.number,
+	  slideToIndex: _propTypes2.default.number,
+	  autoPlay: _propTypes2.default.bool,
+	  infinite: _propTypes2.default.bool,
+	  showSlideInfo: _propTypes2.default.bool,
+	  mouseDragEnabled: _propTypes2.default.bool,
+	  fadeOutAnimation: _propTypes2.default.bool,
+	  autoPlayInterval: _propTypes2.default.number,
+	  autoPlayDirection: _propTypes2.default.string,
+	  disableAutoPlayOnAction: _propTypes2.default.bool,
+	  stopAutoPlayOnHover: _propTypes2.default.bool,
+	  preventEventOnTouchMove: _propTypes2.default.bool
+	};
+	
+	var defaultProps = exports.defaultProps = {
+	  items: [],
+	  children: [],
+	  responsive: {},
+	  stagePadding: {},
+	  duration: 250,
+	  startIndex: 0,
+	  slideToIndex: 0,
+	  autoPlay: false,
+	  infinite: true,
+	  dotsDisabled: false,
+	  showSlideInfo: false,
+	  swipeDisabled: false,
+	  autoPlayInterval: 250,
+	  buttonsDisabled: false,
+	  mouseDragEnabled: false,
+	  fadeOutAnimation: false,
+	  playButtonEnabled: false,
+	  autoPlayDirection: 'ltr',
+	  keysControlDisabled: false,
+	  disableAutoPlayOnAction: false,
+	  stopAutoPlayOnHover: true,
+	  preventEventOnTouchMove: false
+	};
 
 /***/ })
 /******/ ]);
