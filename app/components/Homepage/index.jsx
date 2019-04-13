@@ -13,7 +13,7 @@ class Homepage extends Component {
             <div className="search">
             <input type="text" class="searchTerm" placeholder="What are you looking for?"></input>
              <button type="submit" class="searchButton">
-             <i class="fa fa-search"></i>
+             <i className="fa fa-search"></i>
             </button>
             </div>
             </div>

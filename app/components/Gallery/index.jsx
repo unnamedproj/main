@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom';
 import AliceCarousel from 'react-alice-carousel';
-// import "react-alice-carousel/lib/alice-carousel.css";
-
 
 class Gallery extends React.Component {
   constructor(props) {
