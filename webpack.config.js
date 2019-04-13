@@ -34,7 +34,8 @@ var config = {
       test: /\.css$/,
       loaders: [
         'style?sourceMap',
-        'style-loader!css-loader'
+        'style-loader!css-loader',
+        'style!css'
       ]
     }],
     resolve: {
