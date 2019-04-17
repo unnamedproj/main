@@ -36,7 +36,4 @@ class Profile extends React.Component {
   }
 }
 
-module.exports = Signup; 
-
-//how to get username and stuff
-//render ^^
+module.exports = Signup;

@@ -28849,7 +28849,7 @@
 					username: context.state.username,
 					password: context.state.password
 				}).then(function () {
-					window.location = '/home'; //home component!!!!
+					window.location = '/homepage';
 				}).catch(function (err) {
 					console.error('Wrong Password');
 				});
@@ -30602,7 +30602,7 @@
 	      }).then(function (response) {
 	        console.log('response: ', response);
 	      }).then(function () {
-	        window.location = '/dashboard';
+	        window.location = '/homepage';
 	      }).catch(function (err) {
 	        console.error('Error');
 	      });

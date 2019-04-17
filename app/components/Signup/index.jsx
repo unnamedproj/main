@@ -42,7 +42,7 @@ class Signup extends React.Component {
       console.log('response: ',response);
     })
     .then(() => {
-       window.location = '/dashboard'
+       window.location = '/homepage'
     })
     .catch((err) => {
       console.error('Error');
