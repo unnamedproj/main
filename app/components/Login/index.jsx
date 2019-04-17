@@ -31,7 +31,7 @@ class Login extends React.Component {
 			password: context.state.password,
 		})
 		.then(() => {
-			window.location = '/home' //home component!!!!
+			window.location = '/homepage' 
 		})
 		.catch((err) => {
 			console.error('Wrong Password');
