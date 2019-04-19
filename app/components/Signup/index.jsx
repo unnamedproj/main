@@ -7,7 +7,7 @@ class Signup extends React.Component {
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.changeInput = this.changeInput.bind(this);
-    this.usernameHandleKeyDown = this.usernameHandleKeyDown.bind(this)
+    this.usernameHandleKeyUp = this.usernameHandleKeyUp.bind(this)
 
     this.state = {
         username: '',
@@ -50,7 +50,7 @@ class Signup extends React.Component {
     })
   }
 
-  usernameHandleKeyDown(event) {
+  usernameHandleKeyUp(event) {
     const type = event.target.dataset.type;
     const value = event.target.value;
 
@@ -75,7 +75,7 @@ class Signup extends React.Component {
           <div id="error"></div>
           <div className="form-inputs">
             <input 
-              onKeyUp={this.usernameHandleKeyDown}
+              onKeyUp={this.usernameHandleKeyUp}
               className="login-input"
               type='text'
               placeholder='username'
