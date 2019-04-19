@@ -70,12 +70,13 @@ module.exports = function(passport,user){
        passReqToCallback: true
     },
     function(req, username, password, done) {
-      User.findOne({where: {email: username}})
+      User.findOne({where: {username: username}})
       .then((user) => {
         if (!user) {
           return done(null, false, { message: 'Email does not exist' });
         }
         if (!isValidPassword(user.password, password)) {
+          console.log('incorrect password');
           return done(null, false, { message: 'Incorrect password.' });
         }
         const userInfo = user.get();

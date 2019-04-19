@@ -26,6 +26,8 @@ class Login extends React.Component {
 	handleSubmit(e) {
 		const context = this;
 
+		e.preventDefault();
+		
 		axios.post('/auth/login', {
 			username: context.state.username,
 			password: context.state.password,
