@@ -21,4 +21,8 @@ router.get('/find', (req, res, next) => {
 	res.render('index');
 });
 
+router.get('/profile', (req, res, next) => {
+	res.render('index');
+});
+
 module.exports = router;
