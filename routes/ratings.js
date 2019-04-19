@@ -45,12 +45,15 @@ router.get('/get', function(req, res, next){
 		}
 	})
 	.then(result => {
-		var sum;
+		var sum = 0;
 		for(var i=0; i<result.length; i++){
 			sum += result[i];
 		}
 		var average = sum / result.length;
-		res.send(average);
+		if(result.length == 0){
+			average = null;
+		}
+		res.send(average); //returns the average ratings of the user;
 	})
 });
 

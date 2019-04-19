@@ -5,7 +5,7 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
-router.get('/register', (req, res, next) => {
+router.get('/signup', (req, res, next) => {
   res.render('index');
 });
 

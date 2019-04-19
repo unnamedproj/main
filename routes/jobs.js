@@ -10,7 +10,7 @@ router.get('/find', function(req, res, next){
 	})
 	.then(result => {
 		console.log(result.count); // how many jobs there were
-		res.send(result.rows);
+		res.send(result.rows); //returns a list of relevant jobs
 	})
 });
 
