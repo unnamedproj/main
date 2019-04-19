@@ -24,7 +24,6 @@ class Profile extends React.Component {
     return (
       <div>
       This is {this.state.info.username}'s profile!
-        //insert html code here
         {/*<Switch>
           <Route path="/login" render={()=><LoginPage onUsernameChange={this.onUsernameChange}/>
           <Route path="/account" render={() => <AccountItem username={this.state.username} />} />
