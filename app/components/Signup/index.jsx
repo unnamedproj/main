@@ -7,6 +7,7 @@ class Signup extends React.Component {
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.changeInput = this.changeInput.bind(this);
+    this.usernameHandleKeyDown = this.usernameHandleKeyDown.bind(this)
 
     this.state = {
         username: '',
@@ -49,13 +50,32 @@ class Signup extends React.Component {
     })
   }
 
+  usernameHandleKeyDown(event) {
+    const type = event.target.dataset.type;
+    const value = event.target.value;
+
+    axios.post('/auth/check_username', {
+      username: event.target.value
+    })
+    .then((response) => {
+      this.setState({
+        username: value
+      });
+    })
+    .catch((err) => {
+      console.log('Error', err, 'what');
+      document.getElementById("error").innerHTML = '<h3> **username already taken** </h3>'
+    })
+  }
+
   render() {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
+          <div id="error"></div>
           <div className="form-inputs">
             <input 
-              onChange={this.changeInput}
+              onKeyUp={this.usernameHandleKeyDown}
               className="login-input"
               type='text'
               placeholder='username'
