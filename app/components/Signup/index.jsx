@@ -115,7 +115,7 @@ class Signup extends React.Component {
               />
             <span id="lastName"></span>
             <div className="submit">
-              <button id="submit" type="submit" className="btn btn-success">Sign Up</button>
+              <button id="submit" type="submit" className="btn btn-success">Sign Uplol</button>
             </div>
           </div>
         </form>

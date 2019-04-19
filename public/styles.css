@@ -1,29 +1,52 @@
-@import "alice-carousel.css";
 
 * {
 box-sizing: border-box;
 margin: 0;
 padding: 0;
-border: 1px solid blue;
+background-color: lightgrey;
 }
 
 div { text-align: center; }
 
+.App{
+	margin:15px;
+
+
+}
+
 
 .carimages {
-height: 200px;
-width: 200px;
+height: 300px;
+width: 300px;
 }
+
 
 .grid{
  display: grid;
-  grid-column-gap: 50px;
+  grid-column-gap:10px;
   grid-template-columns: auto auto auto;
+align-items: center;
+justify-items: center;
+}
+
+.middle {
+	}
+
+
+.buttons {
+	border:1px solid black;
+	margin: 0;
+padding: 0;
+}
+
+.Dropdown {
+	border:1px solid black;
 }
 
 .logo {
 height:100px;
 width:100px;
+border: 1px dashed blue;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -33,45 +56,5 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
-/*search bar begins*/
-.wrap{
-  width: 30%;
-  position: relative;
-  transform: translate(-50%, -50%);
-  margin:100px;
-}
-
-.search {
-  width: 100%;
-  position: relative;
-}
-
-.searchTerm {
-  float: left;
-  width: 100%;
-  border: 3px solid #00B4CC;
-  padding: 5px;
-  height: 20px;
-  border-radius: 5px;
-  outline: none;
-  color: #9DBFAF;
-}
-
-.searchTerm:focus{
-  color: #00B4CC;
-}
-
-.searchButton {
-  position: absolute;  
-  right: -50px;
-  width: 40px;
-  height: 36px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
-  text-align: center;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
-}
-/*search bar ends*/
+/** below is all the css needed from the other page, use this instead of above 
+*/
