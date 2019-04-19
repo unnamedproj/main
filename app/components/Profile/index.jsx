@@ -11,7 +11,6 @@ class Profile extends React.Component {
   }
 
   componentDidMount() {
-    var x;
     axios.get('/user/info')
     .then((info) => {
       this.setState({
@@ -24,7 +23,7 @@ class Profile extends React.Component {
     console.log(this.state);
     return (
       <div>
-      This is {this.state.info.firstName} Profile!
+      This is {this.state.info.username}'s profile!
         //insert html code here
         {/*<Switch>
           <Route path="/login" render={()=><LoginPage onUsernameChange={this.onUsernameChange}/>

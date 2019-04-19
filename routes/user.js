@@ -1,9 +1,17 @@
 const express = require('express');
 const router = express.Router();
-const user = require('../models/user');
+const models = require('../models');
 
 router.get('/info', (req, res, next) => {
-	res.send(JSON.stringify({firstName:'Janson'}));
+	// console.log('6:',req.user)
+	models.User.findOne({
+		where: {
+			username: req.user.username
+		}
+	})
+	.then((user) => {
+		res.send(JSON.stringify(user.dataValues));
+	});
 });
 
 module.exports = router;
