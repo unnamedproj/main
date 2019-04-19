@@ -4,28 +4,12 @@ import axios            from 'axios';
 class Profile extends React.Component {
   constructor (props) {
     super (props);
-
-    this.state = {
-        username: '',
-        email: '',
-        password: '',
-        firstName: '',
-        lastName: ''
-    };
-  }
-
-  onUsernameChange = (username) => {
-    this.setState({
-      username: username
-      email: email
-      password: password
-      fullname: firstName + ' ' + lastName
-    });
   }
 
   render() {
     return (
       <div>
+      This is the Profile!
         //insert html code here
         {/*<Switch>
           <Route path="/login" render={()=><LoginPage onUsernameChange={this.onUsernameChange}/>
@@ -36,4 +20,4 @@ class Profile extends React.Component {
   }
 }
 
-module.exports = Signup;
+module.exports = Profile;
