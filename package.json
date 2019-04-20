@@ -13,6 +13,7 @@
     "babel-core": "^6.17.0",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "~1.15.1",
+    "bootstrap": "^4.3.1",
     "cookie-parser": "~1.4.3",
     "ejs": "^2.5.2",
     "express": "~4.13.4",
@@ -29,9 +30,11 @@
     "package.json": "^2.0.1",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2",
-    "react-router": "^2.8.1",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.8",
+    "react-dom": "^16.8.6",
+    "react-router": "^3.2.1",
+    "react-scripts": "2.1.8",
     "react-slick": "^0.14.5",
     "react-truncate": "^2.0.1",
     "reactify": "^1.1.1",
@@ -50,6 +53,7 @@
     "nodemon": "^1.18.11",
     "react-alice-carousel": "^1.13.11",
     "style-loader": "^0.23.1",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "webpack-cli": "^3.3.0"
   }
 }
