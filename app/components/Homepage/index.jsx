@@ -9,44 +9,44 @@ import { ButtonGroup } from 'react-bootstrap';
 
 import AliceCarousel from 'react-alice-carousel';
 
- class Homepage extends Component { render() { return (
-<div className="App">
-    <div className="grid">
-        <div className="1">
-            <img className="logo" src='https://lh3.googleusercontent.com/PGj87eT5OroFdd199hELlWMH9xEIN6l9koNdUOMVFX9n3kRewCHURBdtG-N2da0FTdRU' />
-        </div>
-        <div className="middle">
-            <Dropdown>
-                <Dropdown.Toggle variant="primary" id="dropdown-basic">
-                    What are you looking for?
-                </Dropdown.Toggle>
+class Homepage extends Component { 
+    render() { 
+        return (
+            <div className="App">
+                <div className="row navbar">
+                    <div className="col-md-6 dropdown">
+                        <img className="logo" src='/networking.png' />
+                        <Dropdown>
+                            <Dropdown.Toggle variant="primary" id="dropdown-basic">
+                                What are you looking for?
+                            </Dropdown.Toggle>
 
-                <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Chef</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Builder</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Graphic Designer</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Accountant</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Barber</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Clown</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Tattoo Artist</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Web Dev</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Painter</Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
-
-        </div>
-        <div className="buttons">
-            <ButtonGroup vertical>
-                <Button variant="primary">Log in</Button>
-                <Button href="https://www.google.com/">Sign Up</Button>
-            </ButtonGroup>
-        </div>
-    </div>
-
-    <div className="galleryDiv">
-        <Gallery/>
-    </div>
-</div>
-); } }
+                            <Dropdown.Menu>
+                                <Dropdown.Item href="#/action-1">Chef</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Builder</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">Graphic Designer</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Accountant</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Barber</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Clown</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Tattoo Artist</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Web Dev</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Painter</Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown>
+                    </div>
+                    <div className="col-md-6 authlinks">
+                        <a href="/login">Log in</a>
+                        <a href="/signup">Sign Up</a>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-12 galleryDiv">
+                        <Gallery/>
+                    </div>
+                </div>
+            </div>
+        ); 
+    } 
+}
 
 export default Homepage;
