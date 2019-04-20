@@ -3,7 +3,6 @@
 box-sizing: border-box;
 margin: 0;
 padding: 0;
-background-color: lightgrey;
 }
 
 div { text-align: center; }
@@ -32,6 +31,9 @@ justify-items: center;
 .middle {
 	}
 
+.galleryDiv {
+	margin-top: 80px;
+}
 
 .buttons {
 	border:1px solid black;
@@ -54,6 +56,8 @@ border: 1px dashed blue;
 body{
   background: #f2f2f2;
   font-family: 'Open Sans', sans-serif;
+  background-image: "https://webgradients.com/public/webgradients_png/029%20Everlasting%20Sky.png";
+  background-size: 10%;
 }
 
 /** below is all the css needed from the other page, use this instead of above 

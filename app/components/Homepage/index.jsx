@@ -25,6 +25,12 @@ import AliceCarousel from 'react-alice-carousel';
                     <Dropdown.Item href="#/action-1">Chef</Dropdown.Item>
                     <Dropdown.Item href="#/action-2">Builder</Dropdown.Item>
                     <Dropdown.Item href="#/action-3">Graphic Designer</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Accountant</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Barber</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Clown</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Tattoo Artist</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Web Dev</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Painter</Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
 
@@ -37,9 +43,9 @@ import AliceCarousel from 'react-alice-carousel';
         </div>
     </div>
 
-    <h1>Find a worker!</h1>
-
-    <Gallery/>
+    <div className="galleryDiv">
+        <Gallery/>
+    </div>
 </div>
 ); } }
 
