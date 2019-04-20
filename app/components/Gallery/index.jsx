@@ -13,7 +13,7 @@ class Gallery extends React.Component {
     }
 
     this.state = {
-      galleryItems: [<a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages"  src="https://www.careerfaqs.com.au/wp-content/uploads/2018/10/How_to_become_a_graphic_designer_612px.jpg"/><figcaption>Graphic Designer</figcaption></figure></a>,
+      galleryItems: [<a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages"  src="https://cdn-images-1.medium.com/max/1600/0*I0vqL4kZwVo_knXG.png"/><figcaption>Graphic Designer</figcaption></figure></a>,
      <a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages" src="https://ichef.bbci.co.uk/images/ic/640x360/p04vzmvk.jpg"/><figcaption>Builder</figcaption></figure></a>,
       <a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages" src="http://www.italianmade.com/ca/wp-content/uploads/2015/05/Rob-Gentile-Buca.jpg"/><figcaption>Chef</figcaption></figure></a>,
       <a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages" src="https://i.imgur.com/DuqzSFH.jpg"/><figcaption>Accountant</figcaption></figure></a>,
@@ -38,19 +38,21 @@ class Gallery extends React.Component {
  
   render() {
     return (
-      <AliceCarousel
-        items={this.state.galleryItems}
-        responsive={this.responsive}
-        autoPlayInterval={2000}
-        autoPlayDirection="rtl"
-        autoPlay={true}
-        fadeOutAnimation={true}
-        mouseDragEnabled={true}
-        playButtonEnabled={true}
-        disableAutoPlayOnAction={true}
-        onSlideChange={this.onSlideChange}
-        onSlideChanged={this.onSlideChanged}
-      />
+      <div className="gallery-container">
+        <AliceCarousel
+          items={this.state.galleryItems}
+          responsive={this.responsive}
+          autoPlayInterval={2000}
+          autoPlayDirection="rtl"
+          autoPlay={true}
+          fadeOutAnimation={true}
+          mouseDragEnabled={true}
+          playButtonEnabled={true}
+          disableAutoPlayOnAction={true}
+          onSlideChange={this.onSlideChange}
+          onSlideChanged={this.onSlideChanged}
+        />
+    </div>
     )
   }
 }
