@@ -14,7 +14,8 @@ class Signup extends React.Component {
         email: '',
         password: '',
         firstName: '',
-        lastName: ''
+        lastName: '',
+        error: false
     };
   }
 
@@ -61,12 +62,19 @@ class Signup extends React.Component {
       this.setState({
         username: value
       });
+      document.getElementById("error").innerHTML = ''
+      this.setState({
+        error: false
+      })
     })
     .catch((err) => {
       console.log('Error', err, 'what');
-      document.getElementById("error").innerHTML = '<h3> **username already taken** </h3>'
+      this.setState({
+        error: true
+      });
     })
   }
+
 
   render() {
     return (
@@ -74,53 +82,70 @@ class Signup extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <div id="error"></div>
           <div className="form-inputs">
-            <input 
-              onKeyUp={this.usernameHandleKeyUp}
-              className="login-input"
-              type='text'
-              placeholder='username'
-              data-type='username'
-              />
-            <span id="username"></span>
-            <input 
-              onChange={this.changeInput}
-              className="login-input"
-              type='password' 
-              placeholder='password'
-              data-type='password'
-              />
-            <span id="password"></span>
-            <input 
-              onChange={this.changeInput}
-              className="login-input"
-              type='text' 
-              placeholder='email'
-              data-type='email'
-              />
-            <span id="email"></span>
-            <input 
-              onChange={this.changeInput}
-              className="login-input"
-              type='text' 
-              placeholder='firstName'
-              data-type='firstName'
-              />
-            <span id="firstName"></span>
-            <input 
-              onChange={this.changeInput}
-              className="login-input"
-              type='text' 
-              placeholder='lastName'
-              data-type='lastName'
-              />
-            <span id="lastName"></span>
+            <div className='logo-signup'>
+              <img src='strawberry.png'/>
+            </div>
+            <div className='signin-container'>
+              <input 
+                onKeyUp={this.usernameHandleKeyUp}
+                className="login-input"
+                type='text'
+                placeholder='username'
+                data-type='username'
+                style={this.state.error ? {color: 'red'} : {}}
+                autoFocus
+                />
+              <br />
+              <span className='signin-error' id="username">{this.state.error ? 'username taken' : ''}</span>
+            </div>
+            <div className='signin-container'>
+              <input 
+                onChange={this.changeInput}
+                className="login-input"
+                type='password' 
+                placeholder='password'
+                data-type='password'
+                />
+              <span id="password"></span>
+            </div>
+            <div className='signin-container'>
+              <input 
+                onChange={this.changeInput}
+                className="login-input"
+                type='text' 
+                placeholder='email'
+                data-type='email'
+                />
+              <span id="email"></span>
+            </div>
+            <div className='signin-container'>
+              <input 
+                onChange={this.changeInput}
+                className="login-input"
+                type='text' 
+                placeholder='first name'
+                data-type='firstName'
+                />
+              <span id="firstName"></span>
+            </div>
+            <div className='signin-container'>
+              <input 
+                onChange={this.changeInput}
+                className="login-input"
+                type='text' 
+                placeholder='last name'
+                data-type='lastName'
+                />
+              <span id="lastName"></span>
+            </div>
             <div className="submit">
-              <button id="submit" type="submit" className="btn btn-success">Sign Up</button>
+              <div className="btn-group" role="group" aria-label="...">
+                <button type="submit" className="btn btn-default">Sign Up</button>
+              </div>
             </div>
           </div>
         </form>
-        <div id="error">
-        </div>
+        <div id="error"> </div>
       </div>
     );
   }

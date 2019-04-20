@@ -1,11 +1,13 @@
 @import "alice-carousel.css";
 
+/*
 * {
 box-sizing: border-box;
 margin: 0;
 padding: 0;
 border: 1px solid blue;
 }
+*/
 
 div { text-align: center; }
 
@@ -75,3 +77,47 @@ body{
   font-size: 20px;
 }
 /*search bar ends*/
+
+/*sign in page css #edf2f9*/
+.signin-container {
+  align-self: center;
+  align-content: center;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  padding: 5px, 5px;
+  margin: 0 auto;
+  font-family: 'EB Garamond', serif;
+}
+
+.form-inputs{
+  background-color: rgba(1, 163, 164,0.4);
+  margin: 50px 50px 50px 50px;
+  padding: 20px;
+  font-family: 'EB Garamond', serif;
+  box-shadow: 1px 1px 1px #675454;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.form-inputs input {
+  background-color: rgba(255,255,255,0.8);
+  border: none;
+}
+
+.logo-signup {
+  text-align: center;
+}
+
+.logo-signup img {
+  max-width: 100px;
+  margin: 20px;
+}
+
+.signin-error{
+  font-size: 10px;
+}
+/*end for sign in */
