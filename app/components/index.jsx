@@ -6,7 +6,6 @@ import Login from './Login/index.jsx';
 import Signup from './Signup/index.jsx';
 import Homepage from './Homepage/index.jsx';
 import Profile from './Profile/index.jsx';
-import ReactTooltip from 'react-tooltip';
 
 ReactDOM.render((
     <Router history={browserHistory}>
