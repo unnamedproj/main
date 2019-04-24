@@ -6,6 +6,7 @@ import Login from './Login/index.jsx';
 import Signup from './Signup/index.jsx';
 import Homepage from './Homepage/index.jsx';
 import Profile from './Profile/index.jsx';
+import Dashboard from './Dashboard/index.jsx';
 
 ReactDOM.render((
     <Router history={browserHistory}>
@@ -14,5 +15,6 @@ ReactDOM.render((
       <Route path="/signup" component={Signup}></Route>
       <Route path="/homepage" component={Homepage}></Route>
       <Route path="/profile" component={Profile}></Route>
+      <Route path='/dashboard' component={Dashboard}></Route>
     </Router>
 ), document.getElementById('app'));g
