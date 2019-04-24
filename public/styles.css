@@ -4,8 +4,8 @@
 box-sizing: border-box;
 margin: 0;
 padding: 0;
-}
-*/
+border: 1px solid blue;
+}*/
 
 div { 
   text-align: center; 
@@ -108,7 +108,7 @@ a:hover {
 }
 /*search bar ends*/
 
-/*sign in page css #edf2f9*/
+/*sign up page css #edf2f9*/
 .signin-container {
   align-self: center;
   align-content: center;
@@ -150,7 +150,8 @@ input:focus {
 .signin-error{
   font-size: 10px;
 }
-/*end for sign in */
+
+/* end of sign up page*/
 
 .btn {
   font-weight: bold;

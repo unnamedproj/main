@@ -14,8 +14,7 @@ class Signup extends React.Component {
         email: '',
         password: '',
         firstName: '',
-        lastName: '',
-        error: false
+        lastName: ''
     };
   }
 
@@ -62,19 +61,12 @@ class Signup extends React.Component {
       this.setState({
         username: value
       });
-      document.getElementById("error").innerHTML = ''
-      this.setState({
-        error: false
-      })
     })
     .catch((err) => {
       console.log('Error', err, 'what');
-      this.setState({
-        error: true
-      });
+      document.getElementById("error").innerHTML = '<h3> **username already taken** </h3>'
     })
   }
-
 
   render() {
     return (
@@ -150,5 +142,4 @@ class Signup extends React.Component {
     );
   }
 }
-
 module.exports = Signup; 

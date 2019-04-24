@@ -6,7 +6,6 @@ import Login from './Login/index.jsx';
 import Signup from './Signup/index.jsx';
 import Homepage from './Homepage/index.jsx';
 import Profile from './Profile/index.jsx';
-import ReactTooltip from 'react-tooltip';
 
 
 ReactDOM.render((
@@ -17,4 +16,4 @@ ReactDOM.render((
       <Route path="/homepage" component={Homepage}></Route>
       <Route path="/profile" component={Profile}></Route>
     </Router>
-), document.getElementById('app'));
+), document.getElementById('app'));g
