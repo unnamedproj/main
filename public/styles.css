@@ -1,13 +1,11 @@
 @import "alice-carousel.css";
 
-/*
 * {
 box-sizing: border-box;
 margin: 0;
 padding: 0;
 border: 1px solid blue;
 }
-*/
 
 div { text-align: center; }
 
@@ -33,6 +31,35 @@ width:100px;
 body{
   background: #f2f2f2;
   font-family: 'Open Sans', sans-serif;
+}
+
+div {
+ text-align: center;
+}
+
+.App{
+ margin:15px;
+}
+
+body {
+ font-family: 'Lora', serif;
+ font-weight: 300;
+ background-color: white;
+}
+
+img {
+ border-radius: 20%;
+}
+
+h1, h2, h3, h4, h5, h6  {
+ font-family: 'Lora', sans-serif;
+ font-weight: 900;
+ color: black;
+ font-size: 1em;
+}
+
+a {
+ color: black;
 }
 
 /*search bar begins*/
@@ -76,9 +103,10 @@ body{
   cursor: pointer;
   font-size: 20px;
 }
+<<<<<<< HEAD
 /*search bar ends*/
 
-/*sign in page css #edf2f9*/
+/*sign up page css #edf2f9*/
 .signin-container {
   align-self: center;
   align-content: center;
@@ -120,4 +148,34 @@ input:focus {
 .signin-error{
   font-size: 10px;
 }
-/*end for sign in */
+/* end of sign up page*/
+
+.btn {
+  font-weight: bold;
+}
+
+.navbar a {
+  font-weight: bold;
+  color: #4a8abf;
+  margin: 0 10px 0 10px;
+  text-align: right;
+}
+
+.navbar {
+  margin: 0 10px;
+}
+
+.navbar .dropdown {
+  text-align: left;
+  display: inherit;
+}
+
+.authlinks {
+  text-align: right;
+}
+
+.btn-primary {
+  background-color: white;
+  color: #4a8abf;
+  border-color: #4a8abf;
+}
