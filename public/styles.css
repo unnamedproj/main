@@ -1,39 +1,69 @@
-@import "alice-carousel.css";
 
 /*
 * {
 box-sizing: border-box;
 margin: 0;
 padding: 0;
-border: 1px solid blue;
 }
 */
 
-div { text-align: center; }
+div { 
+  text-align: center; 
+}
+
+.App{
+  margin:15px;
+}
+
+body {
+ font-family: 'Lora', serif;
+ font-weight: 300;
+ background-color: white;
+}
+
+img {
+  border-radius: 20%;
+}
+
+h1, h2, h3, h4, h5, h6  {
+  font-family: 'Lora', sans-serif;
+  font-weight: 900;
+  color: black;
+  font-size: 1em;
+}
+
+a {
+  color: black;
+}
 
 
 .carimages {
-height: 200px;
-width: 200px;
+  height: 300px;
+  width: 300px;
 }
 
-.grid{
- display: grid;
-  grid-column-gap: 50px;
-  grid-template-columns: auto auto auto;
+a:hover {
+  text-decoration: none;
+  color: #222f3e;
+}
+
+.galleryDiv {
+    margin-top: 80px;
+}
+
+.buttons {
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
-height:100px;
-width:100px;
+  display:grid;
+  height: 50px;
+  width: 50px;
+  grid-column-start: 1;
+  margin: 0 20px 0 0;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-body{
-  background: #f2f2f2;
-  font-family: 'Open Sans', sans-serif;
-}
 
 /*search bar begins*/
 .wrap{
@@ -121,3 +151,33 @@ input:focus {
   font-size: 10px;
 }
 /*end for sign in */
+
+.btn {
+  font-weight: bold;
+}
+
+.navbar a {
+  font-weight: bold;
+  color: #4a8abf;
+  margin: 0 10px 0 10px;
+  text-align: right;
+}
+
+.navbar {
+  margin: 0 10px;
+}
+
+.navbar .dropdown {
+  text-align: left;
+  display: inherit;
+}
+
+.authlinks {
+  text-align: right;
+}
+
+.btn-primary {
+  background-color: white;
+  color: #4a8abf;
+  border-color: #4a8abf;
+}
