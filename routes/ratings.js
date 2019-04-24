@@ -40,7 +40,7 @@ router.get('/rate_customer', function(req, res, next){
 router.get('/get', function(req, res, next){
 	//parameters: user
 	Ratings.findAll( { 
-		where {
+		where: {
 			user: req.body.user.id,
 		}
 	})

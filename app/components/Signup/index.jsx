@@ -73,6 +73,7 @@ class Signup extends React.Component {
       <div>
         <form onSubmit={this.handleSubmit}>
           <div id="error"></div>
+          <div className="form-inputs">
             <div className='logo-signup'>
               <img src='strawberry.png'/>
             </div>
@@ -130,17 +131,15 @@ class Signup extends React.Component {
               <span id="lastName"></span>
             </div>
             <div className="submit">
-              <button id="submit" type="submit" className="btn btn-success">Sign Up</button>
               <div className="btn-group" role="group" aria-label="...">
                 <button type="submit" className="btn btn-default">Sign Up</button>
               </div>
             </div>
           </div>
         </form>
-        <div id="error">
-        </div>
         <div id="error"> </div>
       </div>
     );
   }
+}
 module.exports = Signup; 

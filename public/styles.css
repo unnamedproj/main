@@ -1,11 +1,12 @@
 @import "alice-carousel.css";
 
+/*
 * {
 box-sizing: border-box;
 margin: 0;
 padding: 0;
 border: 1px solid blue;
-}
+}*/
 
 div { text-align: center; }
 
@@ -103,7 +104,6 @@ a {
   cursor: pointer;
   font-size: 20px;
 }
-<<<<<<< HEAD
 /*search bar ends*/
 
 /*sign up page css #edf2f9*/
