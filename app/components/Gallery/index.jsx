@@ -20,8 +20,8 @@ class Gallery extends React.Component {
       <a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages" src="https://previews.123rf.com/images/dmitrymoi/dmitrymoi1610/dmitrymoi161000029/64033995-cute-barber-character-barber-shop-cartoon-vector-illustration-scissors-in-hand-vintage-hairstyle-set.jpg"/><figcaption>Barber</figcaption></figure></a>,
       <a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages" src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX24958929.jpg"/><figcaption>Clown</figcaption></figure></a>,
       <a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages" src="https://www.feedfond.com/wp-content/uploads/2017/09/Tattoo-parlors.png"/><figcaption>Tattoo Artist</figcaption></figure></a>,
-      <a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages" src="https://cdn-images-1.medium.com/max/2600/0*HICLyAdNSIyT0ODU.jpg"/><figcaption>Web Dev</figcaption></figure></a>,
-      <a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages" src="https://cdn.pixabay.com/photo/2019/04/10/10/00/painter-4116622_1280.jpg"/><figcaption>Painter</figcaption></figure></a>].map((i) => (<h2 key={i}>{i}</h2>)),
+      <a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages" src="http://kyachalra.com/wp-content/uploads/2018/08/25.png"/><figcaption>Web Dev</figcaption></figure></a>,
+      <a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages" src="https://afterhourspaintinginc.com/wp-content/uploads/2017/11/PAINTER6.png"/><figcaption>Painter</figcaption></figure></a>].map((i) => (<h2 key={i}>{i}</h2>)),
     }
   }
 
