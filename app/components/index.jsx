@@ -15,4 +15,4 @@ ReactDOM.render((
       <Route path="/homepage" component={Homepage}></Route>
       <Route path="/profile" component={Profile}></Route>
     </Router>
-), document.getElementById('app'));g
+), document.getElementById('app'));

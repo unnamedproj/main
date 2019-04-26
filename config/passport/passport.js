@@ -1,7 +1,7 @@
 var bCrypt = require('bcrypt-nodejs');
 
 module.exports = function(passport,user){
-  var User = user;
+  var Users = user;
   var LocalStrategy = require('passport-local').Strategy;
 
   passport.serializeUser(function(user, done) {
@@ -9,7 +9,7 @@ module.exports = function(passport,user){
   });
 
   passport.deserializeUser(function(id, done) {
-    User.findById(id).then(function(user) {
+    Users.findById(id).then(function(user) {
       if(user){
         done(null, user.get());
       }
@@ -33,7 +33,7 @@ module.exports = function(passport,user){
       passwordField : 'password',
       passReqToCallback : true // allows us to pass back the entire request to the callback
     }, function(req, username, password, done) {
-      User.findOne({where: {username: username}})
+      Users.findOne({where: {username: username}})
       .then((user) => {
         if (user) {
           console.log('found user');
@@ -49,13 +49,13 @@ module.exports = function(passport,user){
             lastname: req.body.lastname
           };
 
-          User.create(data)
-          .then((newUser, created) => {
-            if (!newUser) {
+          Users.create(data)
+          .then((newUsers, created) => {
+            if (!newUsers) {
               return done(null, false);
             }
-            if (newUser) {
-              return done(null, newUser);
+            if (newUsers) {
+              return done(null, newUsers);
             }
           });
         }
@@ -70,7 +70,7 @@ module.exports = function(passport,user){
        passReqToCallback: true
     },
     function(req, username, password, done) {
-      User.findOne({where: {username: username}})
+      Users.findOne({where: {username: username}})
       .then((user) => {
         if (!user) {
           return done(null, false, { message: 'Email does not exist' });
