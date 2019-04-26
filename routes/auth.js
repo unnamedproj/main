@@ -13,7 +13,7 @@ router.post('/signup', passport.authenticate('local-signup'), (req, res, next) =
 
 router.post('/check_username', (req, res, next) => {
   console.log(req.body.username, 'test')
-  models.User.findOne({where: {username: req.body.username}})
+  models.Users.findOne({where: {username: req.body.username}})
   .then((user) => {
     if(user){
       console.log('username taken');

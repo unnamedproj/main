@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
 import Gallery from '../Gallery/index.jsx'; 
 import  { DropdownButton } from 'react-bootstrap'
 import { Button } from 'react-bootstrap';

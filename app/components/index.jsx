@@ -7,7 +7,6 @@ import Signup from './Signup/index.jsx';
 import Homepage from './Homepage/index.jsx';
 import Profile from './Profile/index.jsx';
 
-
 ReactDOM.render((
     <Router history={browserHistory}>
       <Route path="/" component={App}></Route>
@@ -15,6 +14,5 @@ ReactDOM.render((
       <Route path="/signup" component={Signup}></Route>
       <Route path="/homepage" component={Homepage}></Route>
       <Route path="/profile" component={Profile}></Route>
-       
     </Router>
 ), document.getElementById('app'));

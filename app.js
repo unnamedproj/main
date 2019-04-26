@@ -10,7 +10,7 @@ var models = require("./models");
 
 var port = 5000;
 console.log('app.js line 12', Object.keys(models));
-require('./config/passport/passport.js')(passport, models.User);
+require('./config/passport/passport.js')(passport, models.Users);
 
 var routes = require('./routes/index');
 var auth = require('./routes/auth');

@@ -56,6 +56,17 @@ a:hover {
   padding: 0;
 }
 
+h1{
+  font-family: 'EB Garamond', serif;
+}
+
+h2, h3, h4, h5, h6  {
+ font-family: 'Lora', sans-serif;
+ font-weight: 900;
+ color: black;
+ font-size: 1em;
+}
+
 .logo {
   display:grid;
   height: 50px;

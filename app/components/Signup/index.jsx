@@ -14,7 +14,8 @@ class Signup extends React.Component {
         email: '',
         password: '',
         firstName: '',
-        lastName: ''
+        lastName: '',
+        error: false,
     };
   }
 
@@ -59,12 +60,16 @@ class Signup extends React.Component {
     })
     .then((response) => {
       this.setState({
-        username: value
+        username: value,
+        error: false
       });
     })
     .catch((err) => {
       console.log('Error', err, 'what');
-      document.getElementById("error").innerHTML = '<h3> **username already taken** </h3>'
+      this.setState({
+        error: true
+      })
+      //document.getElementById("error").innerHTML = '<h3> **username already taken** </h3>'
     })
   }
 
@@ -131,9 +136,7 @@ class Signup extends React.Component {
               <span id="lastName"></span>
             </div>
             <div className="submit">
-              <div className="btn-group" role="group" aria-label="...">
-                <button type="submit" className="btn btn-default">Sign Up</button>
-              </div>
+              <button type="submit" id='submit'>Sign Up</button>
             </div>
           </div>
         </form>
