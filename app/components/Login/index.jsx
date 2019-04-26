@@ -10,7 +10,8 @@ class Login extends React.Component {
 
 		this.state = {
 			username: '',
-			password: ''
+			password: '',
+			error: false
 		}
 	}
 
@@ -37,6 +38,9 @@ class Login extends React.Component {
 		})
 		.catch((err) => {
 			console.error('Wrong Password');
+			this.setState({
+				error: true
+			})
 		})
 	}
 
@@ -45,25 +49,32 @@ class Login extends React.Component {
 	      <div>
 	        <form onSubmit={this.handleSubmit}>
 	          <div className="form-inputs">
-	            <input 
-	              onChange={this.changeInput}
-	              className="login-input"
-	              type='text'
-	              placeholder='username'
-	              data-type='username'
-	              />
-	            <span id="username"></span>
-	            <input 
-	              onChange={this.changeInput}
-	              className="login-input"
-	              type='password' 
-	              placeholder='password'
-	              data-type='password'
-	              />
-	            <span id="password"></span>
-	            <div className="submit">
-	              <button id="submit" type="submit" className="btn btn-success">Login</button>
+		        <div className='logo-signup'>
+	              <img src='strawberry.png'/>
 	            </div>
+	            <div className='signin-container'>
+		            <input 
+		              onChange={this.changeInput}
+		              className="login-input"
+		              type='text'
+		              placeholder='username'
+		              data-type='username'
+		              />
+		            <span id="username"></span>
+		            <br />
+		        </div>
+		        <div className='signin-container'>
+		            <input 
+		              onChange={this.changeInput}
+		              className="login-input"
+		              type='password' 
+		              placeholder='password'
+		              data-type='password'
+		              />
+		            <br />
+		            <span className='signin-error' id="password">{this.state.error ? 'password incorrect' : ''}</span>
+		        </div>
+	              <button type="submit" id="submit">Login</button>
 	          </div>
 	        </form>
 	        <div id="error">
