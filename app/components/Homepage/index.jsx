@@ -3,6 +3,30 @@ import Gallery from '../Gallery/index.jsx';
 // className is just the JSX version of a html class
 
 class Homepage extends Component {
+
+  handleSubmit(e) {
+    const context = this;
+    console.log('31');
+    e.preventDefault();
+
+    axios.post('/auth/signup', {
+       username: context.state.username,
+       password: context.state.password,
+       email: context.state.email,
+       firstName: context.state.firstName,
+       lastName: context.state.lastName
+    })
+    .then((response) => {
+      console.log('response: ',response);
+    })
+    .then(() => {
+       window.location = '/homepage'
+    })
+    .catch((err) => {
+      console.error('Error');
+    })
+  }
+  
   render() {
     return (
       <div className="App">
