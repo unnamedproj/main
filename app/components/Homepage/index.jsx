@@ -16,11 +16,18 @@ class Homepage extends React.Component {
                     <div className="col-md-6 dropdown">
                         <img className="logo" src='/networking.png' />
                         <div className="dropdown">
-  <button className="dropbtn">Dropdown <span>&#8595;</span></button>
+  <button className="dropbtn">Find a Worker! <span>&#8595;</span></button>
   <div className="dropdown-content">
   <a href="#">Graphic Designer</a>
   <a href="#">Builder</a>
   <a href="#">Chef</a>
+  <a href="#">Accountant</a>
+  <a href="#">Barber</a>
+  <a href="#">Clown</a>
+  <a href="#">Tattoo Artist</a>
+  <a href="#">Web Dev</a>
+  <a href="#">Painter</a>
+
   </div>
 </div>
 
