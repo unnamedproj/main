@@ -21,6 +21,54 @@ body {
  background-color: white;
 }
 
+/*dropbar begins*/
+.dropbtn {
+  background-color: white;
+  color: #4a8abf;;
+  padding: 16px;
+  font-size: 16px;
+  border: 1px solid #4a8abf;;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+/*dropbar ends*/
+
 img {
   border-radius: 20%;
 }
@@ -76,48 +124,6 @@ h2, h3, h4, h5, h6  {
 }
 
 
-/*search bar begins*/
-.wrap{
-  width: 30%;
-  position: relative;
-  transform: translate(-50%, -50%);
-  margin:100px;
-}
-
-.search {
-  width: 100%;
-  position: relative;
-}
-
-.searchTerm {
-  float: left;
-  width: 100%;
-  border: 3px solid #00B4CC;
-  padding: 5px;
-  height: 20px;
-  border-radius: 5px;
-  outline: none;
-  color: #9DBFAF;
-}
-
-.searchTerm:focus{
-  color: #00B4CC;
-}
-
-.searchButton {
-  position: absolute;  
-  right: -50px;
-  width: 40px;
-  height: 36px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
-  text-align: center;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
-}
-/*search bar ends*/
 
 /*sign up page css #edf2f9*/
 .signin-container {
