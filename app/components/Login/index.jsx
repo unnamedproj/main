@@ -59,6 +59,7 @@ class Login extends React.Component {
 		              type='text'
 		              placeholder='username'
 		              data-type='username'
+		              autoFocus
 		              />
 		            <span id="username"></span>
 		            <br />
