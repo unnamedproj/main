@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 
 import AliceCarousel from 'react-alice-carousel';
@@ -57,4 +57,4 @@ class Gallery extends React.Component {
   }
 }
 
-export default Gallery;
+module.exports = Gallery;
