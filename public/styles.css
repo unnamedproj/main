@@ -25,10 +25,13 @@ body {
 .dropbtn {
   background-color: white;
   color: #4a8abf;;
-  padding: 16px;
+  padding: 5px 16px;
+
   font-size: 16px;
   border: 1px solid #4a8abf;;
   cursor: pointer;
+  border-radius: 5%;
+  margin-left: 10px;
 }
 
 /* The container <div> - needed to position the dropdown content */
