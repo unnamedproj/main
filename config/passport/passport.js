@@ -4,6 +4,10 @@ module.exports = function(passport,user){
   var Users = user;
   var LocalStrategy = require('passport-local').Strategy;
 
+  function cap(string) {
+      return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
   passport.serializeUser(function(user, done) {
      done(null, user.id);
   });
@@ -40,13 +44,14 @@ module.exports = function(passport,user){
           return done(null, false, {message: 'Username is already taken'});
         } else {
           console.log('proceed');
+          console.log(req.body);
           const password = generateHash(req.body.password);
           const data = {
             username: username,
             email: req.body.email,
             password: password,
-            firstname: req.body.firstname,
-            lastname: req.body.lastname
+            firstName: cap(req.body.firstName),
+            lastName: cap(req.body.lastName)
           };
 
           Users.create(data)

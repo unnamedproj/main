@@ -13,6 +13,7 @@ class Profile extends React.Component {
   componentDidMount() {
     axios.get('/user/info')
     .then((info) => {
+      console.log(info);
       this.setState({
         info: info.data
       });
@@ -26,13 +27,15 @@ class Profile extends React.Component {
     console.log(this.state);
     return (
       <div>
-      <b>This is {this.state.info.username}'s profile!</b> <p><a href="/homepage">Homepage</a></p>
-        <div><img className="avatar" src="https://image.flaticon.com/icons/svg/194/194938.svg" width="10%" height="10%"/></div>
+        <div className="form-inputs">
+          <b>This is {this.state.info.username}'s profile!</b> <p><a href="/homepage">Homepage</a></p>
+          <div><img className="avatar" src="https://image.flaticon.com/icons/svg/194/194938.svg" width="10%" height="10%"/></div>
           <div>First Name: {this.state.info.firstName}</div>
           <div>Last Name: {this.state.info.lastName}</div>
           <div>Email: {this.state.info.email}</div>
           <div>Phone: {this.state.info.phone}</div>
           <div>Description: </div>
+        </div>
       </div>
     );
   }

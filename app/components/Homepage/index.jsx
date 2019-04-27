@@ -35,6 +35,7 @@ class Homepage extends React.Component {
                         <Gallery/>
                     </div>
                 </div>
+
             </div>
         ); 
     } 
