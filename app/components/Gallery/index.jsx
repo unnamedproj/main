@@ -12,16 +12,13 @@ class Gallery extends React.Component {
       1024: { items: 3 },
     }
 
+    var galleryObj = JSON.parse(this.props.photos);
+    var galleryItems = Object.keys(galleryObj).map((key) => {
+      return (<figure><img className="carimages" src={galleryObj[key]}/><figcaption>{key}</figcaption></figure>);
+    });
+
     this.state = {
-      galleryItems: [<a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages"  src="https://cdn-images-1.medium.com/max/1600/0*I0vqL4kZwVo_knXG.png"/><figcaption>Graphic Designer</figcaption></figure></a>,
-     <a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages" src="https://images.all-free-download.com/images/graphiclarge/funny_cartoon_builders_vector_illustration_576191.jpg"/><figcaption>Builder</figcaption></figure></a>,
-      <a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages" src="https://images.all-free-download.com/images/graphicthumb/cartoon_cook_cute_design_vector_541584.jpg"/><figcaption>Chef</figcaption></figure></a>,
-      <a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages" src="https://applebymall.co.uk/wp-content/uploads/2016/06/questions-for-accountants.jpg"/><figcaption>Accountant</figcaption></figure></a>,
-      <a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages" src="https://previews.123rf.com/images/dmitrymoi/dmitrymoi1610/dmitrymoi161000029/64033995-cute-barber-character-barber-shop-cartoon-vector-illustration-scissors-in-hand-vintage-hairstyle-set.jpg"/><figcaption>Barber</figcaption></figure></a>,
-      <a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages" src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX24958929.jpg"/><figcaption>Clown</figcaption></figure></a>,
-      <a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages" src="https://www.feedfond.com/wp-content/uploads/2017/09/Tattoo-parlors.png"/><figcaption>Tattoo Artist</figcaption></figure></a>,
-      <a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages" src="http://kyachalra.com/wp-content/uploads/2018/08/25.png"/><figcaption>Web Dev</figcaption></figure></a>,
-      <a href="https://memegenerator.net/img/instances/54179236/hello-is-it-me-youre-looking-for.jpg"><figure><img className = "carimages" src="https://afterhourspaintinginc.com/wp-content/uploads/2017/11/PAINTER6.png"/><figcaption>Painter</figcaption></figure></a>].map((i) => (<h2 key={i}>{i}</h2>)),
+      galleryItems: galleryItems.map((i) => (<h2 key={i}>{i}</h2>)),
     }
   }
 
